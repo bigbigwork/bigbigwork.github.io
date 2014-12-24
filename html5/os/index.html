@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #taskbar{
+            position: fixed;
+            width: 100%;
+            height: 40px;
+            background: rgba(37,133,85,1);
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+        }
+        #startMenu{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            width: 50px;
+            height: 40px;
+            background: url(res/start.png);
+        }
+        #startMenu:hover{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            width: 50px;
+            height: 40px;
+            background: url(res/start-hover.png);
+        }
+    </style>
+</head>
+<body>
+    <div id="taskbar">
+        <div id="startMenu"></div>
+    </div>
+</body>
+</html>
