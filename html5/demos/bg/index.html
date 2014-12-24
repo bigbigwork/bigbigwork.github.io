@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="email=no" name="format-detection"/>
+    <title></title>
+    <style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    @-webkit-keyframes rotate {
+        from { -webkit-transform: rotate(0deg); }
+        to { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    #wrap:after{
+        position: absolute;
+	    top: 50%; left: 50%;
+        margin: -750px 0 0 -750px;
+	    z-index: -1;
+        /*content: url(http://lea.verou.me/css-4d/img/spiral.png);*/
+        content: url(spiral.png);
+        -webkit-animation: rotate 6s linear infinite;
+        animation: rotate 6s linear infinite;
+    }
+    </style>
+</head>
+<body>
+    <div id="wrap"></div>
+</body>
+</html>
