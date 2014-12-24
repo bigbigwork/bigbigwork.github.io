@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="email=no" name="format-detection"/>
+    <title></title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background: rgba(20,130,200,1);
+            background: url(bg.png);
+        }
+        #pan{
+            position: fixed;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            background: rgba(255,255,255,0.5);
+        }
+        #head{
+            background-image: url(head.png);
+            width: 80px;
+            height: 80px;
+            background-size: 100%;
+            float: left;
+            clear: left;
+        }
+        #live{
+            float: left;
+            clear: none;
+            background: #f00;
+            width: 300px;
+            height: 20px;
+            border-radius: 30px;
+        }
+        @keyframes run {
+            50% {
+                background-position: -100px 0px;
+            }
+        }
+        @-webkit-keyframes run {
+
+        }
+        .sheep{
+            background-image: url(sheep-ani.png);
+            width: 162px;
+            height:121px;
+            background-position: 0px 0px ;
+            background-repeat: no-repeat;
+            position: fixed;
+
+            right: 0;
+            -webkit-transform: scale(0.5);
+            bottom:0px;
+            /*-webkit-animation: run 1s infinite;*/
+        }
+    </style>
+    <script>
+        function click(e){
+
+        }
+        function stop(e){
+            e.setAttribute("data-loop","false");
+        }
+        function play(e){
+            e.setAttribute("data-loop","true");
+        }
+        window.addEventListener("load",function(){
+            var sheeps=document.getElementsByClassName("sheep");
+            setInterval(function(){
+                for(var i=0;i<sheeps.length;i++) {
+                    if (sheeps[i].getAttribute("data-loop") == "true") {
+                        if (sheeps[i].hasAttribute("data-bleft")) {
+                            var bleft = sheeps[i].getAttribute("data-bleft");
+                            bleft=parseFloat(bleft);
+                            bleft -= 162.9;
+                            if (bleft < -1302) {
+                                bleft = 0;
+                            }
+                            sheeps[i].setAttribute("data-bleft", bleft);
+                            sheeps[i].style.backgroundPosition = bleft + "px 0px";
+                        } else {
+                            sheeps[i].setAttribute("data-bleft", 0);
+                        }
+
+                        if (sheeps[i].hasAttribute("data-right")) {
+                            var right = sheeps[i].getAttribute("data-right");
+                            right=parseInt(right);
+
+                            right+=(Math.floor(Math.random() * 5)+1);
+                            console.log(right);
+                            if (right > document.body.scrollWidth) {
+                                right = -100;
+                            }
+                            sheeps[i].setAttribute("data-right", right);
+                            sheeps[i].style.right = right + "px";
+                        } else {
+                            sheeps[i].setAttribute("data-right", 0);
+                        }
+
+
+                    }
+                }
+            },1000/24);
+        },false)
+    </script>
+</head>
+<body>
+    <div id="pan">
+        <div id="head"></div>
+        <div id="live"><span id=""></span></div>
+    </div>
+    <div class="sheep" data-loop="true" data-live="100" onclick="click(this)"></div>
+    <div class="sheep" data-loop="true" data-live="100" onclick="click(this)"></div>
+    <div class="sheep" data-loop="true" data-live="100" onclick="click(this)"></div>
+    <div class="sheep" data-loop="true" data-live="100" onclick="click(this)"></div>
+    <div class="sheep" data-loop="true" data-live="100" onclick="click(this)"></div>
+    <div class="sheep" data-loop="true" data-live="100" onclick="click(this)"></div>
+</body>
+</html>
+<div style="-webkit-transform: translate3d(30px, 30px, 0px) rotate(0deg); width: 110px; height: 185px; display: none;"><img src="rain.png"></div>
