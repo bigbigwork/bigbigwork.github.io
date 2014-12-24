@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "找猴子",
+  "description": "你能找到几只猴子？",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "res/monkey.png",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
