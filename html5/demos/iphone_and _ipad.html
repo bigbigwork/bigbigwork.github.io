@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+	<style>
+		#wrap{
+			position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    overflow: hidden;
+	    	background: url(demoimages/background.jpg);
+	    	background-repeat: no-repeat,no-repeat;
+	    	background-attachment: fixed;
+	    	background-position:center;
+	    	background-size:cover;
+	    	background-origin: content-box;
+	    	padding:100px;
+            display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+            display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+            display: -ms-flexbox;      /* TWEENER - IE 10 */
+            display: -webkit-flex;     /* NEW - Chrome */
+            display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+            /*justify-content: center;*/
+            flex-flow:row;
+            
+		}
+		#mob{
+			background: url(demoimages/iPhone.png);
+			width: 340px;
+            min-width: 340px;
+			height: 715px;
+            min-height: 715px;
+			background-size:100%;
+            display: inline-block;
+            margin: auto;
+		}
+		#iphone{
+			width: 300px;
+			height: 515px;
+			overflow: hidden;
+			margin: 103px 0px 0px 20px;
+			border: none;
+			background-color: #fff;
+		}
+        #pad{
+            width: 800px;
+            min-width: 800px;
+            height: 628px;
+            min-height: 628px;
+			display: inline-block;
+            background: url(demoimages/iPad.png);
+            background-size:100%;
+            margin: auto;
+            overflow: hidden;
+		}
+        #ipad{
+            width: 650px;
+            height: 495px;
+            margin: 70px 0px 0px 75px;
+            border: none;
+            background: #fff;
+            display: block;
+        }
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="mob">
+			<iframe id="iphone" src="http://www.bjnews.com.cn/world/2014/07/18/325877.html"></iframe>
+		</div>
+		<div id="pad">
+			<iframe id="ipad" src="http://www.bjnews.com.cn/world/2014/07/18/325877.html"></iframe>
+		</div>
+	</div>
+</body>
+</html>
