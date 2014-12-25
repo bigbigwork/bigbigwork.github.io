@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+        body{
+            background: #000;
+        }
+        @-webkit-keyframes a {
+            0% { 
+                -webkit-transform: scale(1); 
+            }
+            50%{
+                -webkit-transform: scale(1) rotate(50deg); 
+            }
+        }
+        @-webkit-keyframes b {
+            0% { 
+                -webkit-transform: scale(1); 
+            }
+            50%{
+                -webkit-transform: scale(1) rotate(-50deg); 
+            }
+        }
+        #player{
+            width: 400px;
+            height: 400px;
+            background: #fff;
+            position: fixed;
+            top: 30%;
+            left: 30%;
+            -webkit-transform-origin: center;
+        }
+        #player.up{
+            
+            -webkit-transform:rotate(-90deg);
+        }
+        #player.down{
+
+            -webkit-transform:rotate(90deg);
+        }
+        #player.left{
+ 
+            -webkit-transform:rotate(-180deg);
+        }
+        #player.right{
+   
+            -webkit-transform:rotate(0deg);
+        }
+        .a{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 0px;
+            height: 0px;
+            border-top: solid 100px #e8f100;
+            border-bottom: solid 100px #e8f100;
+            border-left: solid 100px #e8f100;
+            border-right: solid 100px transparent;
+            border-radius:100px;
+            
+            -webkit-transform-origin: center;
+            -webkit-animation: a 1s infinite;
+        }
+        .b{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 0px;
+            height: 0px;
+            border-top: solid 100px #e8f100;
+            border-bottom: solid 100px #e8f100;
+            border-left: solid 100px #e8f100;
+            border-right: solid 100px transparent;
+            border-radius:100px;
+            
+            -webkit-transform-origin: center;
+            -webkit-animation: b 1s infinite;
+            
+        }
+    </style>
+    <script>
+    document.addEventListener("keypress", function (e) {
+        // body...
+        var keyCode = 0;
+        var e = e || window.event;
+        keyCode = e.keyCode || e.which || e.charCode;
+        //alert(keyCode);
+        if (keyCode == 109) {
+            //w
+            
+        }
+        if (keyCode == 115) {
+            //s
+            document.getElementById("player").setAttribute("class","down");
+            //showPlayer();
+        }
+        if (keyCode == 97) {
+            //a
+            document.getElementById("player").setAttribute("class","left");
+            //showPlayer();
+        }
+        if (keyCode == 100) {
+            //d
+            document.getElementById("player").setAttribute("class","right");
+            //showPlayer();
+        }
+        if (keyCode == 119) {
+            //w
+            document.getElementById("player").setAttribute("class","up");
+            //showPlayer();
+        }
+        if (keyCode == 32) {
+            //fire
+        }
+        //
+    }, false);
+    </script>
+</head>
+<body>
+<div id="player">
+	<div class="a"></div>
+	<div class="b"></div>
+</div>
+</body>
+</html>
