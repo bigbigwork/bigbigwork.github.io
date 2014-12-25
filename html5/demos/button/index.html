@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        @-webkit-keyframes bg_go{
+            0% {
+                background-position: 0px 100px,0px 0px;
+            }
+            100%{
+                background-position: 0px 0px,0px 0px;
+            }
+        }
+        @-webkit-keyframes bg_back{
+            0% {
+                background-position: 0px -100px,0px 0px;
+            }
+            100%{
+                background-position: 0px 0px,0px 0px;
+            }
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            background:url(button_bg.png),-webkit-linear-gradient(top,#ff9d00,#cc6200);
+            background-size: 200%;
+            text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+            color: #fff;
+            line-height: normal;
+            border: 0;
+            border-radius: 10px;
+            cursor: pointer;
+            -webkit-animation: bg_back 0.5s linear 0s 1;
+        }
+        button:hover{
+            width: 100px;
+            height: 40px;
+            background:url(button_bg.png),-webkit-linear-gradient(top,#ff9d00,#cc6200);
+            background-size:200%;
+            text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+            color: #fff;
+            line-height: normal;
+            border: 0;
+            border-radius: 10px;
+            cursor: pointer;
+            -webkit-animation: bg_go 0.5s linear 0s 1;
+        }
+    </style>
+</head>
+<body>
+    <button>button</button>
+</body>
+</html>
