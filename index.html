@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>bigbigWork</title>
+    <title>big big work</title>
     <style>
         *{
             margin: 0;
@@ -28,6 +28,7 @@
         button{
             width: 100px;
             height: 40px;
+            font-size: 14px;
             background-image: url(res/button_bg.png),-webkit-linear-gradient(top,#ff9d00,#cc6200);
             background-size: 200%;
             text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
@@ -37,6 +38,14 @@
             border-radius: 2px;
             cursor: pointer;
             -webkit-animation: button_out 0.5s linear 0s 1;
+            margin: 5px;
+            display: inline-block;
+
+        }
+        button.select{
+
+            background-image: url(res/button_bg.png),-webkit-linear-gradient(top,#f9291e,#ff0c00);
+
         }
         button:hover{
             -webkit-animation: button_hover 0.5s linear 0s 1;
@@ -58,46 +67,225 @@
         .pan{
             padding: 20px;
             /* background-color: #222; */
-            background-color: rgba(0,0,0,0.15);
+            background-color: rgba(0,0,0,0.3);
             -webkit-border-radius: 2px;
             -moz-border-radius: 2px;
             border-radius: 2px;
             border-color: #1d1d1d;
             border: 2px solid rgba(0,0,0,0.15);
+            overflow-y: auto;
+            overflow-x: hidden;
+            text-align: center;
+        }
+        .item{
+            width: 100%;
+            height: auto;
+            text-align: left;
+        }
+        #box{
+            width: 80%;
+            position: absolute;
+            height: auto;
+            bottom: 50px;
+            top: 150px;
+            right: 10%;
+            left: 10%;
+
+        }
+        .block{
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            overflow: hidden;
+            float: left;
+            clear: none;
+            text-align: center;
+            margin: 10px 10px 0px 0px;
+            background: rgba(255,255,255,0.8);
+            cursor: pointer;
+        }
+        .block:hover{
+            background:-webkit-linear-gradient(top,#ff9d00,#cc6200);
+        }
+        .block img{
+            height:100px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        h2{
+            color: #fff;
+            width: 100%;
+            float: left;
+            clear: left;
+        }
+        #iphone_box{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            display: none;
+        }
+        #iphone_box #iphone_pan{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50%;
+            height: 50%;
+        }
+        #iphone_box #iphone_pan #iphone{
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            top: -400px;
+            left: -400px;
+            background: url(res/iphone_320x480.png);
+        }
+        #iphone_box #iphone_pan #iphone #iphone_html{
+            position: absolute;
+            width: 320px;
+            height:480px;
+            top: 161px;
+            left: 242px;
+            background: #fff;
+        }
+        p{
+            width: 100%;
+            color: #fff;
+            font-size: 14px;
+            line-height: 30px;
+            float: left;
+            clear: left;
+            margin: 10px 0px 0px 0px;
         }
         @media screen and (max-width: 600px){
-            .pan{
-                padding: 10px;
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                height: 80px;
-            }
-            input{
-                left: 10px;
-                right: 10px;
-                padding: 0;
-                margin: 0;
-                position: absolute;
-                top: 10px;
-            }
-            button{
-                left: 10px;
-                right: 10px;
-                padding: 0;
-                margin: 0;
-                top: 55px;
-                position: absolute;
-            }
         }
     </style>
+    <script src="bigbigwork.js"></script>
 </head>
-<body style="background-image: url(images/background.jpg); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-    <img src="images/background.jpg" style="display: none;">
-    <div class="pan">
-        <input placeholder="input your name">
-        <button>reg</button>
+<body style="background-image: url(res/background.jpg); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
+<img src="res/background.jpg" style="display: none;">
+<div class="pan">
+    <button item_id="item_1">h5</button>
+    <button item_id="item_2">1</button>
+    <button item_id="item_3">2</button>
+    <button item_id="item_4">base64编码</button>
+    <button item_id="item_5">3</button>
+    <button item_id="item_6">4</button>
+</div>
+<div class="pan" id="box">
+    <div id="item_1" class="item">
+        <h2>h5</h2>
+        <div class="block">
+            <a href="http://zt.bjnews.com.cn/iflove/20140804/ok.html" target="_blank"><img src="h5worksforwx/2014-08-04.png"></a>
+        </div>
+        <div class="block">
+            <a href="http://zt.bjnews.com.cn/microMessager/game/car/" target="_blank"><img src="h5worksforwx/2014-09-30.png"></a>
+        </div>
+        <div class="block">
+            <a href="http://zt.bjnews.com.cn/microMessager/game/mooncake/game.html" target="_blank"><img src="h5worksforwx/2014-10-10.png"></a>
+        </div>
+        <div class="block">
+            <a href="http://zt.bjnews.com.cn/microMessager/game/testrong360/game.html" target="_blank"><img src="h5worksforwx/2014-09-24.png"></a>
+        </div>
+        <div class="block">
+            <a href="http://zt.bjnews.com.cn/microMessager/game/ufo20141119" target="_blank"><img src="h5worksforwx/2014-11-19.png"></a>
+        </div>
+        <div class="block">
+            <a href="http://zt.bjnews.com.cn/microMessager/web/13" target="_blank"><img src="h5worksforwx/2014-11-13.png"></a>
+        </div>
+        <div class="block">
+            <a href="http://zt.bjnews.com.cn/microMessager/web/book" target="_blank"><img src="h5worksforwx/2014-11-13-2.png"></a>
+        </div>
+        <div class="block">
+            <a href="http://zt.bjnews.com.cn/microMessager/web/danshendaijia" target="_blank"><img src="h5worksforwx/2014-11-14.png"></a>
+        </div>
+        <!--
+        <div class="block">
+            <a href="http://zt.bjnews.com.cn/microMessager/web/shuanghui" target="_blank"><img src="h5worksforwx/2014-11-14-2.png"></a>
+        </div>
+        -->
+        <div class="block">
+            <a href="http://zt.bjnews.com.cn/microMessager/web/tuhao" target="_blank"><img src="h5worksforwx/2014-11-25.png"></a>
+        </div>
+        <div class="block">
+            <a href="http://zt.bjnews.com.cn/microMessager/web/xianfa" target="_blank"><img src="h5worksforwx/2014-12-04.png"></a>
+        </div>
+        <div class="block">
+            <a href="http://zt.bjnews.com.cn/microMessager/web/a2z" target="_blank"><img src="h5worksforwx/2014-12-10.png"></a>
+        </div>
+        <div class="block">
+            <a href="http://zt.bjnews.com.cn/microMessager/web/20141212" target="_blank"><img src="h5worksforwx/20141212.png"></a>
+        </div>
+        <div class="block">
+            <a href="http://zt.bjnews.com.cn/microMessager/web/20141220" target="_blank"><img src="h5worksforwx/2014-12-20.png"></a>
+        </div>
+        <div class="block">
+            <a href="http://zt.bjnews.com.cn/microMessager/web/20141224" target="_blank"><img src="h5worksforwx/2014-12-24.png"></a>
+        </div>
+        <div class="block">
+            <a href="http://zt.bjnews.com.cn/microMessager/web/20141225" target="_blank"><img src="h5worksforwx/2014-12-25.png"></a>
+        </div>
+
     </div>
+    <div id="item_2" class="item">
+        <h2>2</h2>
+
+    </div>
+    <div id="item_3" class="item">
+        <h2>3</h2>
+
+    </div>
+    <div id="item_4" class="item">
+        <h2>base64编码</h2>
+        <iframe id="base64" src="html5/tools/base64.html" width="100%" height="100%" frameborder="0" scrolling="0"></iframe>
+    </div>
+    <div id="item_5" class="item">
+        <h2>5</h2>
+    </div>
+    <div id="item_6" class="item">
+        <h2>6</h2>
+    </div>
+
+
+</div>
+<div id="iphone_box">
+    <div id="iphone_pan">
+        <div id="iphone">
+            <div id="iphone_html">
+                <iframe id="url" src="" width="100%" height="100%" frameborder="0" scrolling="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    _().ready(function(){
+        //
+        _(".item").hide();
+        _("button").hover(function(){
+
+        });
+        _("button").out(function(){
+            //this.removeAttribute("class");
+        });
+        _("button").click(function(){
+            _("button").clearClass();
+            _(".item").hide();
+            _("#"+this.getAttribute("item_id")).show();
+            this.setAttribute("class","select");
+        });
+        _("#iphone_box").click(function(){
+            _("#iphone_box").hide();
+        });
+        _("#item_1").show();
+        _(".block a").attrSelf("data-url","href").clearAttr("href").click(function(){
+            _("#iphone_box").show();
+            _("#url").attr("src",this.getAttribute("data-url"));
+        });
+    });
+</script>
 </body>
 </html>
