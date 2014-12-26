@@ -81,6 +81,7 @@
             width: 100%;
             height: auto;
             text-align: left;
+            display: none;
         }
         #box{
             width: 80%;
@@ -93,8 +94,12 @@
 
         }
         .block{
+            position: relative;
             width: 120px;
             height: 120px;
+            line-height: 120px;
+            font-size: 18px;
+            font-weight: 900;
             border-radius: 10px;
             overflow: hidden;
             float: left;
@@ -106,6 +111,11 @@
         }
         .block:hover{
             background:-webkit-linear-gradient(top,#ff9d00,#cc6200);
+        }
+        .block a{
+            display: block;
+            width: 100%;
+            height: 100%;
         }
         .block img{
             height:100px;
@@ -230,6 +240,10 @@
             <a href="http://zt.bjnews.com.cn/microMessager/web/20141225" target="_blank"><img src="h5worksforwx/2014-12-25.png"></a>
         </div>
 
+        <div class="block">
+            <a href="html5/oldgame/mario.html" target="_blank">Mario</a>
+        </div>
+
     </div>
     <div id="item_2" class="item">
         <h2>2</h2>
@@ -264,7 +278,7 @@
 <script>
     _().ready(function(){
         //
-        _(".item").hide();
+
         _("button").hover(function(){
 
         });
