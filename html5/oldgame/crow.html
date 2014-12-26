@@ -175,7 +175,7 @@
                         
                     }
                 },1000);
-                document.getElementById("d").addEventListener('touchstart',click, false);
+                document.getElementById("d").addEventListener('click',click, false);
 			}
 		</script>
 	</head>
@@ -183,10 +183,7 @@
         <div id="time"></div>
         <div id="d"><div id="w"></div><div id="logo"></div></div>
         <div id="footer">
-            <p>www.h5app.xyz <span style="display:none;"><script type="text/javascript">
-                var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-                document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F272978c2afc299230ef0bf5ae8789554' type='text/javascript'%3E%3C/script%3E"));
-            </script></span>
+            <p>www.bigbigwork.com <span style="display:none;">
 </p>
         </div>
         <div id="gameover">
@@ -195,7 +192,7 @@
                 <p id="msg_over"><span id="alltime1"></span>秒过去了，小乌鸦还没有喝完水，小乌鸦好可怜啊~</p>   
                 <p id="msg_ok">我用了<span id="alltime2"></span>秒就让小乌鸦喝完水了，小乌鸦好开森啊~ 嘻嘻！</p>
             </div>
-            <button ontouchstart="restart()">重新开始。</button>
+            <button onclick="restart()">重新开始。</button>
         </div>
         <div id="gamestart">
             <div class="msg">
@@ -203,7 +200,7 @@
                 <p>给你15秒的时间！</p>
                 <p>点击吸管让乌鸦把水喝完！</p>
             </div>
-            <button ontouchstart="restart()">开始游戏！</button>
+            <button onclick="restart()">开始游戏！</button>
         </div>
 </body>
 </html>
