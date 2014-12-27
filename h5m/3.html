@@ -3,7 +3,7 @@
 <head lang="zh">
     <meta charset="UTF-8">
     <title>模型H5演示</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../tree.js"></script>
     <script src="../ColladaLoader.js"></script>
     <script src="../Detector.js"></script>
@@ -24,6 +24,9 @@
             height: 100%;
             overflow: hidden;
         }
+        div{
+            display: none;
+        }
         #cp{
             z-index: 999;
             position: fixed;
@@ -34,6 +37,7 @@
             bottom: 0px;
             background: rgba(255,255,255,0.5);
             text-align: center;
+            display: block;
         }
     </style>
     <div id="cp">
@@ -79,6 +83,7 @@
     function init() {
 
         container = document.createElement( 'div' );
+        container.style.display="block";
         document.body.appendChild( container );
 
         camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
