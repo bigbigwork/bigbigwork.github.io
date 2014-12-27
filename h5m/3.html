@@ -2,12 +2,14 @@
 <html>
 <head lang="zh">
     <meta charset="UTF-8">
-    <title>模型终于在微信上能看了</title>
+    <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../tree.js"></script>
     <script src="../ColladaLoader.js"></script>
     <script src="../Detector.js"></script>
     <script src="../stats.min.js"></script>
+    <script src="../bigbigwork.js"></script>
+    <link href="../common.css" rel="stylesheet">
     <style>
         *{
             margin: 0;
@@ -19,7 +21,22 @@
             height: 100%;
             overflow: hidden;
         }
+        #cp{
+            z-index: 999;
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background: rgba(255,255,255,0.5);
+            text-align: center;
+        }
     </style>
+    <div id="cp">
+        <button class="select">Auto</button>
+        <button>unAuto</button>
+    </div>
 </head>
 <body>
 <script>
@@ -169,8 +186,20 @@
     }
 
     var clock = new THREE.Clock();
+    function render(){
 
-    function render() {
+    }
+
+    function render_ctrl(){
+        camera.position.x = 10;
+        camera.position.y = 10;
+        camera.position.z = 10;
+
+        camera.lookAt( scene.position );
+        renderer.render( scene, camera );
+    }
+
+    function render_auto() {
 
         var timer = Date.now() * 0.0005;
 
@@ -189,6 +218,20 @@
         renderer.render( scene, camera );
 
     }
+    render=render_auto;
+
+    _("button").click(function(){
+        _("button").clearClass();
+        //
+        if(this.innerHTML=="Auto"){
+            render=render_auto;
+        }
+        if(this.innerHTML=="unAuto"){
+            render=render_ctrl;
+        }
+        //
+        this.setAttribute("class","select");
+    });
 </script>
 </body>
 </html>
