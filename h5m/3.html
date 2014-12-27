@@ -2,7 +2,7 @@
 <html>
 <head lang="zh">
     <meta charset="UTF-8">
-    <title></title>
+    <title>模型H5演示</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../tree.js"></script>
     <script src="../ColladaLoader.js"></script>
@@ -151,9 +151,13 @@
         particleLight.add( pointLight );
 
 
-
-        //renderer = new THREE.WebGLRenderer();
-        renderer=new THREE.CanvasRenderer();
+        var myCanvasObject =document.createElement('canvas');
+        var webgl = myCanvasObject.getContext("experimental-webgl");
+        if(webgl==null){
+            renderer=new THREE.CanvasRenderer();
+        }else{
+            renderer = new THREE.WebGLRenderer();
+        }
         renderer.setSize( window.innerWidth, window.innerHeight );
 
         container.appendChild( renderer.domElement );

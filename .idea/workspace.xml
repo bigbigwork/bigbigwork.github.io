@@ -59,8 +59,8 @@
       <file leaf-file-name="3.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/h5m/3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23142509" vertical-offset="0" max-vertical-offset="4674">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.09257004" vertical-offset="0" max-vertical-offset="4750">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -232,7 +232,7 @@
       <recent name="C:\Users\g\Documents\bigbigwork.github.io\blends" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (2)">
+  <component name="RunManager" selected="JavaScript Debug.3.html">
     <configuration default="false" name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/index.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
@@ -304,8 +304,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.3.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.3.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
         <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.15.html" />
         <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
         <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.demo.html" />
@@ -555,8 +555,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/h5m/3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23142509" vertical-offset="0" max-vertical-offset="4674">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.09257004" vertical-offset="0" max-vertical-offset="4750">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
