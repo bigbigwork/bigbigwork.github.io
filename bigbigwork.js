@@ -172,6 +172,21 @@ bbw.prototype.select=function(obj){
     this.objs=arr;
     return this;
 }
+
+
+/*
+* plus
+* */
+/* is array */
+_.isArray=function(o){
+    return Object.prototype.toString.call(o) === '[object Array]';
+}
+_.randomArray=function(arr){
+    arr=arr.sort(function(){
+        return Math.random() > 0.5 ? -1 : 1;
+    });
+    return arr;
+}
 //bbw=new bbw();
 function _(s){
     return new bbw(s);
