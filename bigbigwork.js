@@ -1,6 +1,7 @@
 /**
  * Created by g on 2014/12/26.
  * http://www.github.com/bigbigwork
+ * 只增加，不减少，不改变原有方法。
  */
 var bbw=function(s){
     this.objs=document.querySelectorAll(s);
@@ -21,10 +22,24 @@ bbw.prototype.show=function(){
 }
 /* innerHTML */
 bbw.prototype.text=function(t){
-    for(i=0;i<this.objs.length;i++){
-        this.objs[i].innerHTML=t;
+
+    if(t==undefined){
+        var arr=new Array();
+        for(i=0;i<this.objs.length;i++){
+            var value=this.objs[i].innerHTML;
+            arr.push(value);
+        }
+        if(arr.length>1){
+            return arr;
+        }else{
+            return arr[0];
+        }
+    }else{
+        for(i=0;i<this.objs.length;i++){
+            this.objs[i].innerHTML=t;
+        }
+        return this;
     }
-    return this;
 }
 
 /* random Array */
@@ -75,17 +90,86 @@ bbw.prototype.clearAttr=function(a){
     return this;
 }
 bbw.prototype.attr=function(a,b){
-    for(i=0;i<this.objs.length;i++){
-        this.objs[i].setAttribute(a,b);
-        console.log(b)
+    /* 2014 12 30 */
+    if(b==undefined){
+        var arr=new Array();
+        for(i=0;i<this.objs.length;i++){
+            var value=this.objs[i].getAttribute(a);
+            arr.push(value);
+        }
+        if(arr.length>1){
+            return arr;
+        }else{
+            return arr[0];
+        }
+    }else{
+        for(i=0;i<this.objs.length;i++){
+            this.objs[i].setAttribute(a,b);
+            console.log(b)
+        }
+        return this;
     }
-    return this;
 }
+
 /* setAttribute：value from myself */
 bbw.prototype.attrSelf=function(a,b){
     for(i=0;i<this.objs.length;i++){
         eval("this.objs[i].setAttribute(a,this.objs[i]."+b+")");
     }
+    return this;
+}
+/* from 1 to end+1  */
+bbw.prototype.initIndex=function(){
+    for(i=0;i<this.objs.length;i++){
+        this.objs[i].setAttribute("data-index",(i+1));
+    }
+    return this;
+}
+bbw.prototype.count=function(a){
+    a["count"]=this.objs.length;
+    return this;
+}
+/* style 2014 12 30 */
+bbw.prototype.style=function(a,b){
+    /* 2014 12 30 */
+    if(b==undefined){
+        var arr=new Array();
+        for(i=0;i<this.objs.length;i++){
+            var cmd="var value=this.objs[i].style."+a;
+            eval(cmd);
+            arr.push(value);
+        }
+        if(arr.length>1){
+            return arr;
+        }else{
+            return arr[0];
+        }
+    }else{
+        for(i=0;i<this.objs.length;i++){
+            var cmd="this.objs[i].style."+a+"='"+b+"'";
+            //console.log(cmd)
+            eval(cmd);
+        }
+        return this;
+    }
+}
+/* select like  linQ */
+/* selct from 1 */
+bbw.prototype.selectIndex=function(i){
+    i=i-1;
+    var arr=new Array();
+    arr[0]=this.objs[i];
+    this.objs=arr;
+    return this;
+}
+bbw.prototype.select=function(obj){
+    var arr=new Array();
+    for(i=0;i<this.objs.length;i++){
+        if(this.objs[i]==obj){
+            arr[0]=this.objs[i];
+        }
+    }
+    this.objs=arr;
     return this;
 }
 //bbw=new bbw();
