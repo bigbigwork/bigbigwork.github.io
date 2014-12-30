@@ -187,6 +187,11 @@ _.randomArray=function(arr){
     });
     return arr;
 }
+_.isTEL=function(number){
+    ///^[\w\-\.]+@[\w\-\.]+(\.\w+)+$/.test
+    return /^(((13[0-9]{1})|159|153|185)+\d{8})$/.test(number);
+    //
+}
 //bbw=new bbw();
 function _(s){
     return new bbw(s);
