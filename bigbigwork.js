@@ -192,6 +192,21 @@ _.isTEL=function(number){
     return /^(((13[0-9]{1})|159|153|185)+\d{8})$/.test(number);
     //
 }
+_.printCode=function(html){
+    html=html.replace(/</g,"&lt;");
+    html=html.replace(/>/g,"&gt;");
+    return html;
+}
+_.randomPass=function(len){
+    len = len || 32;
+    var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';    /****默认去掉了容易混淆的字符oOLl,9gq,Vv,Uu,I1****/
+    var maxPos = $chars.length;
+    var pwd = '';
+    for (i = 0; i < len; i++) {
+        pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
+    }
+    return pwd;
+}
 //bbw=new bbw();
 function _(s){
     return new bbw(s);
