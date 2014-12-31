@@ -153,6 +153,7 @@ bbw.prototype.style=function(a,b){
         return this;
     }
 }
+bbw.prototype.css=bbw.prototype.style;/* like jq */
 /* select like  linQ */
 /* selct from 1 */
 bbw.prototype.selectIndex=function(i){
