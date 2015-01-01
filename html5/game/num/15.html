@@ -281,7 +281,7 @@
 <body>
     <div id="game_pan">
         <div id="topbar">
-            <h2 id="title">15年最火的算数游戏</h2>
+            <h2 id="title">2015年的算数游戏</h2>
             <div id="time"></div>
         </div>
         <div id="game_box">
@@ -439,6 +439,20 @@
                 return false;
             }
         }
+        function check_3(value_1,value_2){
+            if(value_1*value_2==15){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        function check_4(value_1,value_2){
+            if(value_1/value_2==15){
+                return true;
+            }else{
+                return false;
+            }
+        }
 
         function tap(i){
             num++;
@@ -456,8 +470,8 @@
                     document.querySelector("#icon_"+i).setAttribute("class","icon_select");
                     value_1=document.querySelector("#icon_"+select_1).getAttribute("value");
                     value_2=document.querySelector("#icon_"+select_2).getAttribute("value");
-                    value_1=parseInt(value_1);
-                    value_2=parseInt(value_2);
+                    value_1=parseFloat(value_1);
+                    value_2=parseFloat(value_2);
 
                     if(check(value_1,value_2)){
                         lineto(select_1,select_2);
@@ -569,7 +583,94 @@
                 }
             },10);
         }
-
+        function next3(){
+            win=0;
+            document.querySelector("#title").innerHTML="相乘等于15";
+            check=check_3;
+            num=0;
+            select_1=0;
+            select_2=0;
+            var arr=[
+                [75,75],
+                [0.2,0.2],
+                [15,15],
+                [1,1],
+                [7.5,7.5],
+                [2,2],
+                [5,5],
+                [3,3],
+                [3.75,3.75],
+                [4,4],
+                [2.5,2.5],
+                [6,6],
+                [1.5,1.5],
+                [10,10],
+                [0.5,0.5],
+                [30,30]
+            ];
+            arr=arr.sort(function(){
+                return Math.random() > 0.5 ? -1 : 1;
+            });
+            for(i=0;i<arr.length;i++){
+                console.log(i)
+                document.querySelector("#icon_"+(i+1)).innerHTML=arr[i][0];
+                document.querySelector("#icon_"+(i+1)).setAttribute("value",arr[i][1]);
+                document.querySelector("#icon_"+(i+1)).setAttribute("class","icon");
+            }
+            timeall=2000;
+            timevalue=timeall;
+            timer=setInterval(function(){
+                timevalue--;
+                document.querySelector("#time").style.width=(timevalue/timeall)*100+"%";
+                if(timevalue==0){
+                    gameover();
+                }
+            },10);
+        }
+        function next4(){
+            win=0;
+            document.querySelector("#title").innerHTML="相除等于15";
+            check=check_4;
+            num=0;
+            select_1=0;
+            select_2=0;
+            var arr=[
+                [15,15],
+                [1,1],
+                [30,30],
+                [2,2],
+                [45,45],
+                [3,3],
+                [60,60],
+                [4,4],
+                [75,75],
+                [5,5],
+                [90,90],
+                [6,6],
+                [120,120],
+                [105,105],
+                [7,7],
+                [8,8]
+            ];
+            arr=arr.sort(function(){
+                return Math.random() > 0.5 ? -1 : 1;
+            });
+            for(i=0;i<arr.length;i++){
+                console.log(i)
+                document.querySelector("#icon_"+(i+1)).innerHTML=arr[i][0];
+                document.querySelector("#icon_"+(i+1)).setAttribute("value",arr[i][1]);
+                document.querySelector("#icon_"+(i+1)).setAttribute("class","icon");
+            }
+            timeall=2000;
+            timevalue=timeall;
+            timer=setInterval(function(){
+                timevalue--;
+                document.querySelector("#time").style.width=(timevalue/timeall)*100+"%";
+                if(timevalue==0){
+                    gameover();
+                }
+            },10);
+        }
         function youwin(){
             alert("you win");
             clearInterval(timer);
@@ -604,11 +705,16 @@
                     next2();
                     document.querySelector("#nexts").style.display="none";
                 }
+                if(i==3){
+                    next_value=i;
+                    next3();
+                    document.querySelector("#nexts").style.display="none";
+                }
             }else{
                 alert("此关卡尚未解锁或正在开发中，敬请期待。")
             }
         }
-        //next1();
+        //next1();`
         document.querySelector("#next_1").innerHTML=1;
         document.querySelector("#next_1").setAttribute("class","next_unlock");
     </script>
