@@ -208,6 +208,10 @@ _.randomPass=function(len){
     }
     return pwd;
 }
+_.ready=function(x){
+    //window.onload=x;
+    window.addEventListener("load",x,false);
+}
 //bbw=new bbw();
 function _(s){
     return new bbw(s);
