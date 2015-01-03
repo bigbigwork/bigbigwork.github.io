@@ -81,7 +81,9 @@ var Render=function(){
                 for(i=0;i<objs.length;i++){
                     objs[i].update();
                     if(objs[i].live==0){
+                        objs[i].onDie();
                         objs.splice(i,1);
+
                     }
                     //console.log(objs[i])
                 }
@@ -171,4 +173,7 @@ Sprite.prototype.updateExec=function(){
 }
 Sprite.prototype.setUpdate=function(x){
     this.updateExec=x;
+}
+Sprite.prototype.onDie=function(){
+
 }

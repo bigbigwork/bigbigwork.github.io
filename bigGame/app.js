@@ -4,6 +4,7 @@
 _.ready(function(){
     /**/
     var i=0;
+    var dieCount=0;
     /*初始化2d游戏引擎*/
     _.engine.initCanvas("canvas_box",500,500);
     var screen=_.engine.create_screen();
@@ -22,7 +23,7 @@ _.ready(function(){
     var life_text=_.engine.create_text("life",400,100);
     life_text.setColor("#f00");
     life_text.setSize(30);
-    life_text.setText("life");
+    life_text.setText("life:"+dieCount);
     screen.add(life_text);
 
     /*新建一个玩家精灵*/
@@ -35,8 +36,16 @@ _.ready(function(){
     /*添加蓝色精灵到场景*/
     blue.setUpdate(function(){
         this.x++;
-        this.y++;
-    })
+        this.y+=5;
+        if(this.y>= _.canvas_h){
+            this.live=0;
+            _.log("die")
+        }
+    });
+    blue.onDie=function(){
+        dieCount++;
+        life_text.setText("life:"+dieCount);
+    }
     screen.add(blue);
 
     /*新建一个渲染器*/

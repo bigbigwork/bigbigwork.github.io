@@ -4,7 +4,6 @@
     <list default="true" id="72db4c65-9269-4979-87b7-f7fa19b71e14" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bigGame/app.js" afterPath="$PROJECT_DIR$/bigGame/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bigbigwork.2d.js" afterPath="$PROJECT_DIR$/bigbigwork.2d.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bigbigwork.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +50,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bigGame/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="931">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="1102">
+              <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
               <folding>
                 <element signature="e#0#36#0" expanded="false" />
               </folding>
@@ -63,8 +62,8 @@
       <file leaf-file-name="bigbigwork.2d.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bigbigwork.2d.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3143852" vertical-offset="2482" max-vertical-offset="3401">
-              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.70533645" vertical-offset="1064" max-vertical-offset="3496">
+              <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -766,8 +765,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bigGame/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="931">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="1102">
+          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
           <folding>
             <element signature="e#0#36#0" expanded="false" />
           </folding>
@@ -776,8 +775,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bigbigwork.2d.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3143852" vertical-offset="2482" max-vertical-offset="3401">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.70533645" vertical-offset="1064" max-vertical-offset="3496">
+          <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
           <folding />
         </state>
       </provider>
