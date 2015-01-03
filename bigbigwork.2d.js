@@ -2,33 +2,7 @@
  * Created by g on 2015/1/1.
  * 2d 引擎
  */
-_.initCanvas=function(id,w,h){
-    var canvas_box=document.querySelector("#"+id);
-    var canvas=document.createElement("canvas");
-    //
-    _.canvas_w=w;
-    _.canvas_h=h;
-    canvas.width=_.canvas_w;
-    canvas.height=_.canvas_h;
-    canvas.top = 0;
-    canvas.left = 0;
-    _.c = canvas.getContext('2d');
-    canvas_box.appendChild(canvas);
-    //
-}
-_.engine=function(){
 
-}
-_.create_scene=function(){
-
-}
-_.sprites=new Array();
-
-
-
-_.create_sprite=function(name,x,y,src){
-
-}
 _.clear_canvas=function(){
     _.c.clearRect(0, 0, _.canvas_w, _.canvas_h);
 }
@@ -53,6 +27,40 @@ _.animate=function() {
 _.screen=function(){
 
 }
+
+/* Engine */
+
+var Engine=function(){
+
+}
+Engine.prototype.create_screen=function(){
+    return new Screen();
+}
+Engine.prototype.create_text=function(id,x,y,z){
+    return new Text(id,x,y,z);
+}
+Engine.prototype.create_sprite=function(name,x,y,w,h,src){
+    return new Sprite(name,x,y,w,h,src);
+}
+Engine.prototype.create_render=function(){
+    return new Render();
+}
+Engine.prototype.initCanvas=function(id,w,h){
+    var canvas_box=document.querySelector("#"+id);
+    var canvas=document.createElement("canvas");
+    //
+    _.canvas_w=w;
+    _.canvas_h=h;
+    canvas.width=_.canvas_w;
+    canvas.height=_.canvas_h;
+    canvas.top = 0;
+    canvas.left = 0;
+    _.c = canvas.getContext('2d');
+    canvas_box.appendChild(canvas);
+    //
+}
+var engine=new Engine();
+_.engine=engine;
 /* Screen */
 var Screen=function(){
     this.objs=new Array();
@@ -72,6 +80,9 @@ var Render=function(){
                 _.clear_canvas();
                 for(i=0;i<objs.length;i++){
                     objs[i].update();
+                    if(objs[i].live==0){
+                        objs.splice(i,1);
+                    }
                     //console.log(objs[i])
                 }
             }
@@ -94,6 +105,7 @@ var Text=function(id,x,y){
     this.id=id;
     this.x=x;
     this.y=y;
+    this.live=1;
     this.color="#fff";
 }
 Text.prototype.setSize=function(size){
@@ -122,6 +134,7 @@ Text.prototype.setUpdate=function(x){
 }
 /* Sprite */
 var Sprite=function(name,x,y,w,h,src){
+    this.live=1;
     var img=new Image();
     this.x=x;
     this.y=y;
