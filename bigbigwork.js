@@ -212,6 +212,9 @@ _.ready=function(x){
     //window.onload=x;
     window.addEventListener("load",x,false);
 }
+_.log=function(a){
+    console.log(a);
+}
 //bbw=new bbw();
 function _(s){
     return new bbw(s);
