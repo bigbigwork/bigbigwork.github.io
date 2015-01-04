@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<!-- saved from url=(0034)http://js1k.com/2010-xmas/demo/884 -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JS1k, 1k demo submission [884]</title>
+    <style>
+        canvas{
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<script>
+    var b = document.body;
+    var c = document.getElementsByTagName('canvas')[0];
+    var a = c.getContext('2d');
+    //document.body.clientWidth; // fix bug in webkit: http://qfox.nl/weblog/218
+</script>
+<script>
+    // start of submission //
+    document.title = "BauRush";
+    m = Math;
+    a.font = "12px Arial";
+    loop=true;
+    c.height = c.width = 320;
+    s=5;// speed
+    init();
+    function init(){
+        lf = ct = 0;
+        px = 200;
+        sf = [];
+    }
+    function cr(x, y, r, d) {
+        a.fillStyle = d;
+        a.beginPath();
+        a.arc(x, y, r, 0, m.PI * 2, 1);
+        a.closePath();
+        a.fill();
+    }
+    function bg() {
+        for (var i = 0; 400 > i; i++) {
+            a.strokeStyle = "rgb(0,0," + m.round((i / 400) * 255) + ")";
+            a.beginPath();
+            a.moveTo(0, i);
+            a.lineTo(400, i);
+            a.stroke();
+        }
+    }
+    function rn() {
+        cr(px, 300, 15, "red");
+        //cr(px, 285, 4, "yellow");
+        //cr(px - 5, 295, 4, "rgb(255,90,90)");
+    }
+    function tk() {
+        if(!loop) {
+            return false;
+        }
+            a.clearRect(0, 0, 400, 400);
+            ct += 5;
+            //bg();
+            rn();
+            if ((ct - lf) > ((1 / m.sqrt(ct)) * m.pow(10, 4))) {
+                lf = ct;
+                sf.push(Array(m.floor(m.random() * 400), 0));
+            }
+            for (f in sf) {
+                sx = sf[f][0];
+                sy = sf[f][1];
+                if (sy < 400) {
+                    sf[f][1]++;
+                    cr(sx, sy, 5, "white");
+                    if (((px - 20 < sx) && (sx < px + 20)) && ((300-15+5 < sy) && (sy <300+15-5 ))) {
+                        //alert("Game Over! Score: " + ct);
+                        return game_over();
+                    }
+                } else {
+                    sf.splice(0, 1);
+                }
+            }
+        a.fillStyle = "white";
+        a.fillText("haha", 10, 20);
+        a.fillText("Don't get snow on the bauble! Score:" + ct, 10, 40)
+    }
+    function game_over(){
+        //a.clearRect(0, 0, 400, 400);
+        loop=false;
+        a.font = "30px Arial";
+        a.fillStyle = "white";
+        a.fillText("game over", 30, 30);
+        return false;
+    }
+    lastT=0;
+    function animate(){
+        var t=new Date().getTime();
+        if(t-5>lastT){
+            lastT=t;
+            tk();
+        }
+        requestAnimationFrame(animate);
+    }
+    animate();
+    document.onkeydown = function (e) {
+        k = e.which;
+        if ((k == 39) && (px < 380)) {
+            px += s;
+        }
+        if ((k == 37) && (20 < px)) {
+            px -= s
+        }
+    }
+</script>
+</body>
+</html>
