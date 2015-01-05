@@ -27,7 +27,9 @@ _.animate=function() {
 _.screen=function(){
 
 }
+_.gameLoop=function(){
 
+}
 /* Engine */
 
 var Engine=function(){
@@ -59,6 +61,9 @@ Engine.prototype.initCanvas=function(id,w,h){
     canvas_box.appendChild(canvas);
     //
 }
+Engine.prototype.setGameLoop=function(x){
+    _.gameLoop=x;
+}
 var engine=new Engine();
 _.engine=engine;
 /* Screen */
@@ -66,33 +71,50 @@ var Screen=function(){
     this.objs=new Array();
 }
 Screen.prototype.add=function(obj){
+    if(obj.name=="player"){
+        this.player=obj;
+        return false;
+    }
     this.objs.push(obj);
 }
 
+_.timer=0;
 
 /* Render */
 var Render=function(){
     this.animate=function(){
-        var loop=function(objs,fps) {
+        var loop=function(player,objs,fps) {
             var t=new Date().getTime();
             if(t-fps> _.lastT){
                 _.lastT=t;
+                _.timer++;
+
                 _.clear_canvas();
+
+                player.update();
+
                 for(i=0;i<objs.length;i++){
                     objs[i].update();
-                    if(objs[i].live==0){
+                    if(objs[i].life==0){
                         objs[i].onDie();
                         objs.splice(i,1);
-
                     }
+                    //
+                    if (((player.x - player.w < objs[i].x) && (objs[i].x < player.x + player.w)) && ((320-15+5 < objs[i].y) && (objs[i].y <320+15-5 ))) {
+                        //alert("Game Over! Score: " + ct);
+                        player.life--;
+                        return false;
+                    }
+                    //
                     //console.log(objs[i])
                 }
+                _.gameLoop();
             }
             requestAnimationFrame(function(){
-                loop(objs,fps);
+                loop(player,objs,fps);
             });
         }
-        loop(this.screen.objs,this.fps);
+        loop(this.screen.player,this.screen.objs,this.fps);
     }
 }
 Render.prototype.render=function(screen,fps){
@@ -136,12 +158,18 @@ Text.prototype.setUpdate=function(x){
 }
 /* Sprite */
 var Sprite=function(name,x,y,w,h,src){
+    this.name=name;
     this.live=1;
+    this.life=1;
     var img=new Image();
     this.x=x;
     this.y=y;
     this.w=w;
     this.h=h;
+    if(src==undefined){
+        this.img=null;
+        return false;
+    }
     img.src=src;
     function a(x,img,w,h){
         img.onload=function(){
@@ -156,7 +184,9 @@ var Sprite=function(name,x,y,w,h,src){
     }
     a(this,img,w,h);
     this.img=img;
-
+}
+Sprite.prototype.setLife=function(life){
+    this.life=life;
 }
 Sprite.prototype.initData=function(){
 
@@ -167,7 +197,10 @@ Sprite.prototype.setData=function(data){
 Sprite.prototype.update=function(){
     this.updateExec();
     //console.log(this.data);
-    _.c.drawImage(this.img,this.x,this.y,this.w,this.h);
+    if(this.img==null){
+        return false;
+    }
+    _.c.drawImage(this.img,this.x-this.w/2,this.y-this.h/2,this.w,this.h);
 }
 Sprite.prototype.updateExec=function(){
 }
