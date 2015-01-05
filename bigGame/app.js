@@ -6,7 +6,7 @@ _.ready(function(){
     var i=0;
     var dieCount=0;
     /*初始化2d游戏引擎*/
-    _.engine.initCanvas("c",320,320);
+    _.engine.initCanvas("canvas_box",320,320);
     var screen=_.engine.create_screen();
     /*新建一个场景*/
     /*新建一个时间文本
