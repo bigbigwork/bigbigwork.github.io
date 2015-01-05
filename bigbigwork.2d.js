@@ -79,7 +79,7 @@ Screen.prototype.add=function(obj){
 }
 
 _.timer=0;
-
+_.life_timer=0;
 /* Render */
 var Render=function(){
     this.animate=function(){
@@ -88,6 +88,7 @@ var Render=function(){
             if(t-fps> _.lastT){
                 _.lastT=t;
                 _.timer++;
+                _.life_timer++;
                 if(player.life==-1){
                     player.onDie();
                     return false;
@@ -109,9 +110,18 @@ var Render=function(){
                         objs.splice(i,1);
                     }*/
                     if (Math.abs(player.x - objs[i].x)<player.w/1.5 && Math.abs(player.y - objs[i].y)<player.h/1.5) {
-                        player.life--;
-                        objs[i].onDie();
-                        objs.splice(i,1);
+
+                        if(objs[i].type=="enemy"){
+                            player.life--;
+                            objs[i].onDie();
+                            objs.splice(i,1);
+                        }
+                        if(objs[i].type=="life"){
+                            player.life++;
+                            objs[i].onDie();
+                            objs.splice(i,1);
+                        }
+
                     }
                     //
                     //console.log(objs[i])
@@ -169,6 +179,7 @@ var Sprite=function(name,x,y,w,h,src){
     this.name=name;
     this.live=1;
     this.life=1;
+    this.type="enemy";
     var img=new Image();
     this.x=x;
     this.y=y;
@@ -224,5 +235,9 @@ Sprite.prototype.onDie=function(){
 }
 Sprite.prototype.setDie=function(x){
     this.onDie=x;
+    return this;
+}
+Sprite.prototype.setType=function(type){
+    this.type=type;
     return this;
 }
