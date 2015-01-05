@@ -88,7 +88,10 @@ var Render=function(){
             if(t-fps> _.lastT){
                 _.lastT=t;
                 _.timer++;
-
+                if(player.life==-1){
+                    player.onDie();
+                    return false;
+                }
                 _.clear_canvas();
 
                 player.update();
@@ -100,10 +103,15 @@ var Render=function(){
                         objs.splice(i,1);
                     }
                     //
-                    if (((player.x - player.w < objs[i].x) && (objs[i].x < player.x + player.w)) && ((320-15+5 < objs[i].y) && (objs[i].y <320+15-5 ))) {
-                        //alert("Game Over! Score: " + ct);
+                    /*
+                    if (((player.x - player.w < objs[i].x) && (objs[i].x < player.x + player.w)) && ((_.canvas_h-player.w < objs[i].y) && (objs[i].y <_.canvas_h+player.h ))) {
                         player.life--;
-                        return false;
+                        objs.splice(i,1);
+                    }*/
+                    if (Math.abs(player.x - objs[i].x)<player.w/1.5 && Math.abs(player.y - objs[i].y)<player.h/1.5) {
+                        player.life--;
+                        objs[i].onDie();
+                        objs.splice(i,1);
                     }
                     //
                     //console.log(objs[i])
@@ -184,15 +192,18 @@ var Sprite=function(name,x,y,w,h,src){
     }
     a(this,img,w,h);
     this.img=img;
+    return this;
 }
 Sprite.prototype.setLife=function(life){
     this.life=life;
+    return this;
 }
 Sprite.prototype.initData=function(){
 
 }
 Sprite.prototype.setData=function(data){
     this.data=data;
+    return this;
 }
 Sprite.prototype.update=function(){
     this.updateExec();
@@ -206,7 +217,12 @@ Sprite.prototype.updateExec=function(){
 }
 Sprite.prototype.setUpdate=function(x){
     this.updateExec=x;
+    return this;
 }
 Sprite.prototype.onDie=function(){
 
+}
+Sprite.prototype.setDie=function(x){
+    this.onDie=x;
+    return this;
 }
