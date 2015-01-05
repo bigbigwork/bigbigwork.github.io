@@ -103,24 +103,21 @@ var Render=function(){
                         objs[i].onDie();
                         objs.splice(i,1);
                     }
-                    //
-                    /*
-                    if (((player.x - player.w < objs[i].x) && (objs[i].x < player.x + player.w)) && ((_.canvas_h-player.w < objs[i].y) && (objs[i].y <_.canvas_h+player.h ))) {
-                        player.life--;
-                        objs.splice(i,1);
-                    }*/
                     if (Math.abs(player.x - objs[i].x)<player.w/1.5 && Math.abs(player.y - objs[i].y)<player.h/1.5) {
-
+                        /* 如果是敌人 */
                         if(objs[i].type=="enemy"){
                             player.life--;
                             objs[i].onDie();
                             objs.splice(i,1);
                         }
+                        /* 如果能加生命值 */
                         if(objs[i].type=="life"){
                             player.life++;
                             objs[i].onDie();
                             objs.splice(i,1);
                         }
+                        /* 如果是障碍物 */
+                        /* 如果是炸弹：清除全部敌人 */
 
                     }
                     //
