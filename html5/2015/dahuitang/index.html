@@ -51,10 +51,10 @@
           <img src="res/3/into_litang_button.png" onclick="show(4)">
         </div>
         <div class="nan_button">
-          <img src="res/3/nan_button.png" onclick="alert(0)">
+          <img src="res/3/nan_button.png" onclick="show(7)">
         </div>
         <div class="difang_button">
-          <img src="res/3/difang_button.png" onclick="alert(0)">
+          <img src="res/3/difang_button.png" onclick="show(8)">
         </div>
         <div class="bei_button">
           <img src="res/3/bei_button.png" onclick="show(6)">
@@ -99,7 +99,7 @@
     </div>
 
     <!-- 北 結束 -->
-    <!-- 南 開始 --
+    <!-- 南 開始 -->
 
     <div id="page_7" class="page">
         <div class="return_zhongyangdating_button_2">
@@ -113,7 +113,7 @@
         </div>
     </div>
     <!-- 南 結束 -->
-    <!-- 地方 開始 --
+    <!-- 地方 開始 -->
     <div id="page_8" class="page">
         <div class="return_zhongyangdating_button_2">
           <img src="res/4/return_zhongyangdating.png" onclick="show(3)">
@@ -162,7 +162,7 @@
         window.onresize=resize;
 
         /* 各種按鈕的點擊 */
-        var max_page=7;//最大頁數
+        var max_page=9;//最大頁數
         function show(index){
           for(i=0;i<max_page;i++){
             document.getElementById("page_"+i).style.display="none"; 
