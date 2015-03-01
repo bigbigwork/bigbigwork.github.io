@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=8,chrome=1">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta content="email=no" name="format-detection" />
+  <meta property="author" content="gongwenbo" />
+  <meta name="twitter:site" content="gongwenbo" />
+  <title>人民大会堂</title>
+  <meta name="description" content="人民大会堂">
+  <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- 開始屏幕 開始 -->
+    <div id="page_0" class="page">
+        <div class="start_button">
+          <img src="res/0/button.png" onclick="show(1)">
+        </div>
+    </div>
+    <!-- 開始屏幕 結束 -->
+
+    <!-- 主頁屏幕 開始 -->
+    <div id="page_1" class="page">
+        <div class="intu_button">
+          <img src="res/1/into_button.png" onclick="show(2)">
+        </div>
+    </div>
+    <!-- 主頁屏幕 結束 -->
+
+    <!-- 東門屏幕 開始 -->
+    <div id="page_2" class="page">
+        <div id="page_2_guohui"></div>
+        <div id="page_2_zhuzi"></div>
+        <div class="page2_button">
+          <img src="res/2/button.png" onclick="show(3)">
+        </div>
+    </div>
+    <!-- 東門屏幕 結束 -->
+
+    <!-- 人民大會堂中央大廳屏幕 開始 -->
+    <div id="page_3" class="page">
+        <div class="into_litang_button">
+          <img src="res/3/into_litang_button.png" onclick="show(4)">
+        </div>
+        <div class="nan_button">
+          <img src="res/3/nan_button.png" onclick="alert(0)">
+        </div>
+        <div class="difang_button">
+          <img src="res/3/difang_button.png" onclick="alert(0)">
+        </div>
+        <div class="bei_button">
+          <img src="res/3/bei_button.png" onclick="alert(0)">
+        </div>
+    </div>
+    <!-- 人民大會堂中央大廳屏幕  結束 -->
+
+    <!-- 進入大禮堂 開始 -->
+    <div id="page_4" class="page">
+        <div id="title_bg"></div>
+        <div id="zhuxitai_bg"></div>
+        <div id="biaojueqi_bg"></div>
+        <div id="zuowei_bg"></div>
+        <div class="return_zhongyangdating_button_1">
+          <img src="res/4/return_zhongyangdating.png" onclick="show(3)">
+        </div>
+        <div class="goto_3lou_button">
+          <img src="res/4/goto_3lou.png" onclick="show(5)">
+        </div>
+    </div>
+    <!-- 進入大禮堂  結束 -->
+    <!-- 大禮堂3樓，金色大廳 開始 -->
+    <div id="page_5" class="page">
+        <div id="page_5_info_bg"></div>
+        <div class="return_zhongyangdating_button_2">
+          <img src="res/4/return_zhongyangdating.png" onclick="show(3)">
+        </div>
+    </div>
+    <!-- 大禮堂3樓，金色大廳  結束 -->
+
+  </div>
+  <div id="full"></div>
+</body>
+
+  <script type="text/javascript" charset="utf-8">
+        /*
+        使用图片加载完毕以后调用resize();而不是onload，这样可以用来延时。
+        */
+        function resize(){
+            document.getElementById("full").style.display="block";
+            var w=document.getElementById("full").clientWidth;
+            var h=document.getElementById("full").clientHeight;
+            
+
+            var max_w=640;// 最大寬度
+            var max_h=1008;//最大高度
+
+            if(h/max_h*max_w<w){
+                vw=h/max_h*max_w;;
+                vh=h;
+            }else{
+                vw=w;
+                vh=w/max_w*max_h;
+            }
+
+            document.getElementById("wrap").style.height=vh+"px";
+            document.getElementById("wrap").style.width=vw+"px";
+
+            document.getElementById("full").style.display="none";
+        }
+        window.onload=function(){
+            resize();
+        };
+        window.onresize=resize;
+
+        /* 各種按鈕的點擊 */
+        var max_page=6;//最大頁數
+        function show(index){
+          for(i=0;i<max_page;i++){
+            document.getElementById("page_"+i).style.display="none"; 
+          }
+          document.getElementById("page_"+index).style.display="block"; 
+        }
+        show(0);
+  </script>
+
+</html>
