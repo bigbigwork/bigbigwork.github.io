@@ -71,9 +71,21 @@ body{
     opacity: 0;
   }
 }  
-    
+.goto_right{
+	position: absolute;
+	width:5%;
+	height:6%;
+	right:10px;
+	top: 45%;
+	cursor: pointer;
+	-webkit-animation: shanshuo linear forwards 1s 3s 1000 ;
+}
+.goto_left img,.goto_right img{
+	width: 100%;
+	height: 100%;
+} 
 
-/* */
+/* 這裡以後是頁面里可以修改的代碼 這裡以上是基礎代碼，謹慎操作。 */
 #page_0{
 	background-image: url("res/0/2.png"),url("res/0/1.png"),url("res/0/0.jpg");
 	background-size: 100% 100%,100% 100%,100% 100%;
@@ -92,6 +104,16 @@ body{
 	width: 100%;
 	height: 100%;
 }
+.goto_left{
+	position: absolute;
+	width: 5%;
+	height:6%;
+	left:10px;
+	top: 45%;
+	cursor: pointer;
+	-webkit-animation: shanshuo linear forwards 1s 3s 1000 ;
+}
+
 
 /* page_0 end */
 
@@ -337,7 +359,7 @@ body{
 #page_5{
 	background-image: url("res/5/0.jpg");
 	background-size: 100% 100%;
-	
+	display: none;
 }
 #page_5_info_bg{
 	position: absolute;
@@ -356,10 +378,27 @@ body{
 	left:10px;
 	top: 10px;
 	cursor: pointer;
+	-webkit-animation: shanshuo linear forwards 1s 3s 1000 ;
 }
 .return_zhongyangdating_button_2 img{
 	width: 100%;
 	height: 100%;
-	-webkit-animation: shanshuo linear forwards 1s 3s 1000 ;
+	
 }
 /* 中央大廳 3樓結束 */
+
+
+#page_6{
+	background-image: url("res/6/0.png");
+	background-size: 300% 100%;
+}
+#page_6_bg{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-image: url("res/6/bg.png");	
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}

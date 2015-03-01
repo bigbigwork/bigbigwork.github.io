@@ -14,7 +14,7 @@
   <title>人民大会堂</title>
   <meta name="description" content="人民大会堂">
   <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?ddd">
 </head>
 
 <body>
@@ -57,7 +57,7 @@
           <img src="res/3/difang_button.png" onclick="alert(0)">
         </div>
         <div class="bei_button">
-          <img src="res/3/bei_button.png" onclick="alert(0)">
+          <img src="res/3/bei_button.png" onclick="show(6)">
         </div>
     </div>
     <!-- 人民大會堂中央大廳屏幕  結束 -->
@@ -86,14 +86,44 @@
     <!-- 大禮堂3樓，金色大廳  結束 -->
     <!-- 北 開始 -->
     <div id="page_6" class="page">
+        <div id="page_6_bg"></div>
+        <div class="return_zhongyangdating_button_2">
+          <img src="res/4/return_zhongyangdating.png" onclick="show(3)">
+        </div>
+        <div class="goto_left">
+          <img src="res/left.png" onclick="">
+        </div>
+        <div class="goto_right">
+          <img src="res/right.png" onclick="">
+        </div>
     </div>
+
     <!-- 北 結束 -->
-    <!-- 南 開始 -->
+    <!-- 南 開始 --
+
     <div id="page_7" class="page">
+        <div class="return_zhongyangdating_button_2">
+          <img src="res/4/return_zhongyangdating.png" onclick="show(3)">
+        </div>
+        <div class="goto_left">
+          <img src="res/left.png" onclick="">
+        </div>
+        <div class="goto_right">
+          <img src="res/right.png" onclick="">
+        </div>
     </div>
     <!-- 南 結束 -->
-    <!-- 地方 開始 -->
+    <!-- 地方 開始 --
     <div id="page_8" class="page">
+        <div class="return_zhongyangdating_button_2">
+          <img src="res/4/return_zhongyangdating.png" onclick="show(3)">
+        </div>
+        <div class="goto_left">
+          <img src="res/left.png" onclick="">
+        </div>
+        <div class="goto_right">
+          <img src="res/right.png" onclick="">
+        </div>
     </div>
     <!-- 地方 結束 -->
   </div>
@@ -132,7 +162,7 @@
         window.onresize=resize;
 
         /* 各種按鈕的點擊 */
-        var max_page=6;//最大頁數
+        var max_page=7;//最大頁數
         function show(index){
           for(i=0;i<max_page;i++){
             document.getElementById("page_"+i).style.display="none"; 
