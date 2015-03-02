@@ -71,6 +71,15 @@ body{
     opacity: 0;
   }
 }  
+.goto_left{
+	position: absolute;
+	width: 5%;
+	height:6%;
+	left:10px;
+	top: 45%;
+	cursor: pointer;
+	
+}
 .goto_right{
 	position: absolute;
 	width:5%;
@@ -78,7 +87,7 @@ body{
 	right:10px;
 	top: 45%;
 	cursor: pointer;
-	-webkit-animation: shanshuo linear forwards 1s 3s 1000 ;
+	
 }
 .goto_left img,.goto_right img{
 	width: 100%;
@@ -104,15 +113,7 @@ body{
 	width: 100%;
 	height: 100%;
 }
-.goto_left{
-	position: absolute;
-	width: 5%;
-	height:6%;
-	left:10px;
-	top: 45%;
-	cursor: pointer;
-	-webkit-animation: shanshuo linear forwards 1s 3s 1000 ;
-}
+
 
 
 /* page_0 end */
@@ -389,8 +390,9 @@ body{
 
 
 #page_6{
-	background-image: url("res/6/0.png");
-	background-size: 300% 100%;
+	background-image: url("res/6/1.jpg");
+	background-size: 100% 100%;
+	display: none;
 }
 #page_6_bg{
 	position: absolute;
@@ -401,4 +403,46 @@ body{
 	background-image: url("res/6/bg.png");	
 	background-repeat: no-repeat;
 	background-size: auto 100%;
+}
+.text_info {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	width: auto;
+	right: 10px;
+	font-size: 16px;
+}
+/* page_6 北大廳結束 */
+#page_7{
+	background-image: url("res/7/1.jpg");
+	background-size: 100% 100%;
+	display: none;
+}
+#page_7_bg{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-image: url("res/7/bg.png");	
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+/* page_7 南大廳結束  */
+#page_8{
+	background-image: url("res/8/1.jpg");
+	background-size: 100% 100%;
+}
+#page_8_bg{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-image: url("res/8/bg.png");	
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.page{
+	display: none;
 }
