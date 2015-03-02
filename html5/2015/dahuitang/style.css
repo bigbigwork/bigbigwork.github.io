@@ -404,14 +404,6 @@ body{
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 }
-.text_info {
-	position: absolute;
-	left: 10px;
-	bottom: 10px;
-	width: auto;
-	right: 10px;
-	font-size: 16px;
-}
 /* page_6 北大廳結束 */
 #page_7{
 	background-image: url("res/7/1.jpg");
@@ -446,3 +438,16 @@ body{
 .page{
 	display: none;
 }
+
+.text_info {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	width: auto;
+	right: 10px;
+	font-size: 16px;
+	opacity: 0;
+	-webkit-animation: show linear forwards 2s 1s 1 ;
+}
+	
+	
