@@ -16,9 +16,7 @@
             margin: 0px;
             padding: 0px;
         }
-        html{
-        	font-size: 10px;
-        }
+
         body {
             text-align: center;
             margin-bottom: 45px !important;
@@ -79,9 +77,35 @@
         }
 
         #bar {
+            font-family: Helvetica, Tahoma, Arial, Microsoft YaHei, sans-serif;
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.7);
+            background: -webkit-gradient(linear, 0 0, 0 100%, from(#e7e4e7), to(#b9b9b9));
+            border-top: 1px solid #b3b3b3;
+            box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.9) inset;
+            -webkit-box-orient: horizontal;
+            display: -webkit-box;
+            overflow: hidden;
         }
 
         .menu {
+            -webkit-box-flex: 1;
+            background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0.1)), color-stop(50%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.1)), color-stop(50%, rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.1)));
+            -webkit-background-size: 1px 100%, 1px 100%;
+            background-size: 1px 100%, 1px 100%;
+            background-position: 1px center, 2px center;
+            background-repeat: no-repeat;
+            position: relative;
+            text-align: center;
+            width: 33%;
+            height: 45px;
+            line-height: 45px;
+            color: #4f4d4f;
+            font-size: 15px;
         }
 
         .menu a, .menu a:visited, .menu a:hover, .menu a:link {
@@ -107,14 +131,54 @@
         }
 
         @media screen and (max-width: 960px) {
+            .container {
+                width: 96%;
+                padding:0px;
+                margin:0 auto;
+                -webkit-column-count: 4;
+                -webkit-column-gap: 10px;
+                -webkit-column-rule: 5px;
+            }
         }
         @media screen and (max-width: 568px) {
+            .container {
+                width: 96%;
+                padding:0px;
+                margin:0 auto;
+                -webkit-column-count:3;
+                -webkit-column-gap: 10px;
+                -webkit-column-rule: 5px;
+            }
         }
         @media screen and (max-width:320px) {
+            .container {
+                width: 96%;
+                padding:0px;
+                margin:0 auto;
+                -webkit-column-count: 2;
+                -webkit-column-gap: 10px;
+                -webkit-column-rule: 5px;
+            }
         }
         @media screen and (min-width: 960px) {
+            .container {
+                width: 96%;
+                padding:0px;
+                margin:0 auto;
+                -webkit-column-count:6;
+                -webkit-column-gap: 10px;
+                -webkit-column-rule: 5px;
+            }
         }
         @media screen and (min-width: 1000px) {
+            .container {
+                width: 96%;
+                padding:0px;
+                margin:0 auto;
+                -webkit-column-count:7;
+                -webkit-column-gap: 10px;
+                -webkit-column-rule: 5px;
+            }
         }
     </style>
 </head>

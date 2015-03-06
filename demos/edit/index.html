@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://summernote.org/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="http://www.hothuati.com/static/css/summernote.css">
+
+    <link rel="stylesheet" type="text/css" href="http://summernote.org/bower_components/fontawesome/css/font-awesome.css">
+
+    <script type="text/javascript" src="http://www.hothuati.com/static/js/bootstrap/bootstrap.js"></script>
+    <script src="summernote.min.js"></script>
+    <script type="text/javascript" src="http://summernote.org/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+<style>
+    body{
+        font-family: "\5FAE\8F6F\96C5\9ED1";
+        font-weight: 100;
+    }
+    
+</style>
+</head>
+<body>
+<h2>编辑器 插件</h2>
+
+<div class="summernote">summernote 1</div>
+<script>
+    $(document).ready(function() {
+        $('.summernote').summernote({
+          height: 300,   //set editable area's height
+          codemirror: { // codemirror options
+            theme: 'monokai'
+          }
+        });
+    });
+</script>
+</body>
+</html>
