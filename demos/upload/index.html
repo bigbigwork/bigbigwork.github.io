@@ -167,6 +167,7 @@
         var close_icon_button=close_icon_buttons[i];
         close_icon_button.onclick=function(){
             this.parentElement.style.display='none';
+            this.parentElement.parentElement.getElementsByTagName('img')[0].removeAttribute("style");
             this.parentElement.parentElement.getElementsByTagName('img')[0].style.display='none';
             this.parentElement.parentElement.getElementsByTagName('img')[0].src="";
             this.parentElement.parentElement.getElementsByTagName('input')[0].value="";
