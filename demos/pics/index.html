@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<style>
+    body{
+        font-family: "\5FAE\8F6F\96C5\9ED1";
+        font-weight: 100;
+    }
+    .icon {
+        fill: black;
+        width: 32px;
+        height: 32px;
+    }
+    .images{
+        width: 100%;
+        height: auto;
+    }
+    .image{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        display:inline-block;
+        border: solid 1px #ccc;
+        border-radius: 4px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .image img{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 9;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    @-webkit-keyframes rotate {
+	    100%{
+	        -webkit-transform:rotate(-360deg);
+	    }
+	}
+    .image:hover{
+        -webkit-animation: rotate ease-in forwards 0.5s 0s 1
+    }
+    .hide{
+        display: none;
+    }
+</style>
+</head>
+<body>
+<h2>图片自动适应</h2>
+<div id="images" class="images">
+    <div class="image">
+        <img src="img/1.png">
+    </div>
+
+    <div class="image">
+        <img src="img/2.png">
+    </div>
+
+    <div class="image">
+        <img src="img/3.png">
+    </div>
+
+    <div class="image">
+        <img src="img/4.jpg">
+    </div>
+
+    <div class="image">
+        <img src="img/5.jpg">
+    </div>
+
+    <div class="image">
+        <img src="img/6.jpg">
+    </div>
+</div>
+</body>
+</html>
