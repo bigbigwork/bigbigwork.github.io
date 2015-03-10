@@ -2,13 +2,25 @@
 html{
 	font-size: 10px;
 }
+@-webkit-keyframes hover {
+  0% { 
+  	opacity: 0.5;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
 .up_icon{
 	width: 10rem;
 	height: 10rem;
 	border-radius: 50%;
-	background:#ccc;
+	background:rgba(0,0,0,0.5);
 	margin: 0 auto;
 	cursor:pointer;
+}
+.up_icon:hover{
+	background:rgba(0,0,0,0.9);
+	-webkit-animation: hover linear forwards 1s 0s 1 ;
 }
 .up_icon:before{
 	width: 0;
@@ -33,86 +45,10 @@ html{
 	display: block;
 	margin: 0 auto;
 }
-
-.play_icon{
-	width: 10rem;
-	height: 10rem;
-	border-radius: 50%;
-	background:#ccc;
-	margin: 0 auto;
-	cursor:pointer;
-	position: relative;
-}
-.play_icon:before{
-	width: 0;
-	height: 0px;
-	content: "";
-	line-height: -100rem;
-	overflow: hidden;
-	display: block;
-	border-bottom:solid 3rem transparent;
-	border-left:solid 5rem #fff;
-	border-right:solid 0rem transparent;
-	border-top:solid 3rem transparent;
-	position: absolute;
-	top: 2rem;
-	left: 3rem;
-}
-.play_icon:after{
-	width: 3rem;
-	height: 3.5rem;
-	background-color: #000;
-	content: "";
-	line-height: -100rem;
-	overflow: hidden;
-	display: block;
-	position: absolute;
-	opacity: 0.5;
-	border-radius-left;0px,5px;
-}
-
-
-.info_icon{
-	width: 16rem;
-	height: 9rem;
-	background-color: #ccc;
-	border-radius: 50%;
-	position: relative;
-}
-.info_icon:before{
-	position: absolute;
-	border:dashed #666 0.2rem;
-	content: "";
-	display: block;
-	border-radius: 50%;
-	top: 0.3rem;
-	bottom: 0.3rem;
-	left: 0.3rem;
-	right: 0.3rem;
-}
-
-.whale_icon{
-	width: 20rem;
-	height: 10rem;
-	background-color: #ccc;
-	border-top-left-radius: 8rem 8rem;
-	border-bottom-left-radius: 2rem 2rem;
-	border-top-right-radius:15rem 10rem; 
-}
-.whale_icon:first-line{
-	width: 20rem;
-	height: 10rem;
-	background-color: #f00;
-	display: block;
-	content: "";
+.top{
+	margin-top: 2rem;
 }
 </style>
 <div class="up_icon"></div>
-<p></p>
-<div class="play_icon"></div>
-<p></p>
-<div class="info_icon"></div>
-<p></p>
-<div class="apple_icon"></div>
-<p></p>
-<div class="whale_icon"><z></div>
+
+<div class="up_icon top"></div>
