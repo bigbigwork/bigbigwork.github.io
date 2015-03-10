@@ -89,6 +89,23 @@
         right: 5px;
         cursor: pointer;
     }
+    @-webkit-keyframes rotate {
+	    100%{
+	        -webkit-transform:rotate(-180deg);
+	    }
+	}
+    .close_icon_button:hover{
+        width: 20px;
+        height: 20px;
+        background:url("icons/close.svg");
+        background-size: 100%;
+        border-radius: 10px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+        -webkit-animation: rotate ease-in forwards 0.5s 0s 1
+    }
     .hide{
         display: none;
     }
@@ -102,7 +119,7 @@
         <input name="upload_pic_1" id="pic_1" type="file" accept="image/*">
         <img class="hide">
         <div class="mark hide">
-            <div class="close_icon_button"></div>
+            <div title="删除图片" class="close_icon_button"></div>
         </div>
         <label for="pic_1" class="add_icon_button"></label>
     </div>
@@ -111,7 +128,7 @@
         <input name="upload_pic_2" id="pic_2" type="file" accept="image/*">
         <img class="hide">
         <div class="mark hide">
-            <div class="close_icon_button"></div>
+            <div title="删除图片" class="close_icon_button"></div>
         </div>
         <label for="pic_2" class="add_icon_button"></label>
     </div>
@@ -120,7 +137,7 @@
         <input name="upload_pic_3" id="pic_3" type="file" accept="image/*">
         <img class="hide">
         <div class="mark hide">
-            <div class="close_icon_button"></div>
+            <div title="删除图片" class="close_icon_button"></div>
         </div>
         <label for="pic_3" class="add_icon_button"></label>
     </div>
