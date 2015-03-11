@@ -120,6 +120,15 @@
 </style>
 </head>
 <body>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+
 <h2>添加图片</h2>
 <div id="add_icons" class="add_icons">
 
@@ -169,18 +178,6 @@
                 var reader = new FileReader();
                 reader.onload=function(){
                     img.src=this.result;
-                    /*
-                    img.onload=function(){
-                        if(this.width>this.height){
-                            var b=this.height/this.width;
-                            this.style.marginTop=(100-b*100)/2+"%";
-                            this.style.width="100%";
-                        }else{
-                            this.style.height="100%";
-                            this.style.width="auto";
-                        }
-                    }
-                    */
                 }
                 reader.readAsDataURL(file);
             }
