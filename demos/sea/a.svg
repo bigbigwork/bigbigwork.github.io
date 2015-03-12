@@ -76,7 +76,7 @@
      transform="translate(0,3559.9999)">
     <path
        style="display:inline;opacity:0.5;fill:#008080;fill-opacity:0.39378237;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1e-5,-3400 0,4000 600,0 0,-4000 c -132.43824,-56.6772 -194.65709,30.272 -311.25044,1.792 -142.5204,-34.8131 -129.45788,33.2873 -288.74956,-1.792 z"
+       d="m 599.99999,-3400 0,4000 L -1,600 -1,-3400 c 132.65897,-56.6772 194.98152,30.272 311.76919,1.792 142.75793,-34.8131 129.67364,33.2873 289.2308,-1.792 z"
        id="path4734-4"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccsc"
@@ -85,7 +85,7 @@
        inkscape:export-filename="C:\Users\js\Documents\bigbigwork.github.io\demos\sea\b.svg" />
     <path
        style="display:inline;opacity:0.5;fill:#008080;fill-opacity:0.39378237;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 600.00001,-3463.5152 600.00001,600 0,600 0,-3463.5152 c 132.43825,-56.6772 194.6571,30.272 311.25045,1.792 142.5204,-34.8131 129.45788,33.2873 288.74956,-1.792 z"
+       d="M -1,-3463.5152 -1,600 l 601,0 0,-4063.5152 c -132.65898,-56.6772 -194.98153,30.272 -311.7692,1.792 -142.75793,-34.8131 -129.67364,33.2873 -289.2308,-1.792 z"
        id="path4734-4-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccsc"
@@ -94,7 +94,7 @@
        inkscape:export-filename="C:\Users\js\Documents\bigbigwork.github.io\demos\sea\b.svg" />
     <path
        style="display:inline;opacity:0.5;fill:#008080;fill-opacity:0.39378237;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 1e-5,-3540.1818 1e-5,600 l 600,0 0,-4140.1818 c -132.4382,-56.6772 -194.6571,30.272 -311.2504,1.792 -142.5204,-34.8131 -129.4579,33.2873 -288.7496,-1.792 z"
+       d="M 599.99999,-3540.1818 599.99999,600 -1,600 -1,-3540.1818 c 132.65893,-56.6772 194.98153,30.272 311.76915,1.792 142.75793,-34.8131 129.67366,33.2873 289.23084,-1.792 z"
        id="path4734-4-9-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccsc"
