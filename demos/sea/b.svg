@@ -15,7 +15,7 @@
    id="svg4186"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="b.svg"
+   sodipodi:docname="a.svg"
    inkscape:export-filename="C:\Users\js\Pictures\sea.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -30,7 +30,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.5"
      inkscape:cx="-31.5"
-     inkscape:cy="770.81227"
+     inkscape:cy="657.15272"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -60,19 +60,10 @@
      style="display:inline">
     <path
        style="opacity:1;fill:#008080;fill-opacity:0.19607843;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 0,152.3623 0,899.9999 414,10e-5 0,-900 c -161.6216,-99.01046 -244.30552,62.38075 -414,0 z"
+       d="m 414,152.3623 0,899.9999 -414,10e-5 0,-900 C 80.8108,102.85707 76.21183,198.43262 203.97267,138.62616 290.02315,98.34484 329.15276,183.55268 414,152.3623 Z"
        id="path4734"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"
-       inkscape:export-filename="C:\Users\js\Documents\bigbigwork.github.io\demos\sea\b.png" />
-    <path
-       style="display:inline;opacity:1;fill:#008080;fill-opacity:0.19607843;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 0,252.36229 0,899.99991 414,10e-5 0,-900.00001 c -161.6216,-99.01046 -244.30552,62.38075 -414,0 z"
-       id="path4734-0"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc"
+       sodipodi:nodetypes="ccccsc"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"
        inkscape:export-filename="C:\Users\js\Documents\bigbigwork.github.io\demos\sea\b.png" />

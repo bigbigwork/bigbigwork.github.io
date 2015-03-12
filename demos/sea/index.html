@@ -18,7 +18,7 @@
         }
         100%{
             top: -30%;
-            background-position-x: -300%;
+            background-position-x: -1000px;
         }
     }
     @-webkit-keyframes loading_b {
@@ -28,7 +28,7 @@
         }
         100%{
             top: -30%;
-            background-position-x: 300%;
+            background-position-x: 1000px;
         }
     }
     *{
@@ -44,12 +44,12 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background:url(b.svg);
+        background:url(b.svg),url(a.svg);
         background-repeat: repeat-x;
-        background-size: 50% auto;
+        background-size: 100% auto,120 auto;
         display: block;
         content: "";
-        -webkit-animation: loading_b linear forwards 10s 0s 1 ;//線性動畫
+        -webkit-animation: loading_b linear forwards 8s 0s 1 ;//線性動畫
     }
     #loading:before{
         position: fixed;
@@ -57,12 +57,12 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background:url(a.svg);
+        background:url(a.svg),url(b.svg);
         background-repeat: repeat-x;
-        background-size: 50% auto;
+        background-size: 100% auto,120 auto;
         display: block;
         content: "";
-        -webkit-animation: loading_a linear forwards 10s 0s 1 ;//線性動畫
+        -webkit-animation: loading_a linear forwards 8s 0s 1 ;//線性動畫
     }
     </style>
 </head>
