@@ -13,49 +13,35 @@
     <style>
     @-webkit-keyframes loading_a {
         0%{
-            background-position:0% 100%; 
+            top: 110%;
+            background-position-x: 0%;
         }
         100%{
-            background-position:100% -20%;
+            top: -20%;
+            background-position-x: -200%;
         }
     }
     @-webkit-keyframes loading_b {
         0%{
-            background-position:100% 100%; 
+            top: 110%;
+            background-position-x: 0%;
         }
         100%{
-            background-position:0% -20%;
-        }
-    }
-    @-webkit-keyframes loading_c {
-        0%{
-            top:100%; 
-        }
-        100%{
-            top:-20%;
+            top: -20%;
+            background-position-x: 200%;
         }
     }
     #loading{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background:url(a.png);
-        background-repeat: repeat-x;
-        background-position:center bottom;
-        background-size: 50% auto;
-        -webkit-animation: loading_a linear forwards 5s 0s 1 ;//線性動畫
+
     }
     #loading:after{
         position: fixed;
-        top: 0;
+        top: 100%;
         left: 0;
         right: 0;
         bottom: 0;
         background:url(b.png);
         background-repeat: repeat-x;
-        background-position:center bottom;
         background-size: 50% auto;
         display: block;
         content: "";
@@ -63,17 +49,16 @@
     }
     #loading:before{
         position: fixed;
-        top: 0;
+        top: 100%;
         left: 0;
         right: 0;
         bottom: 0;
-        background:rgba(0,128,128,0.63);
+        background:url(a.png);
         background-repeat: repeat-x;
-        background-position:center bottom;
-        background-size:100%;
+        background-size: 50% auto;
         display: block;
         content: "";
-        -webkit-animation: loading_c linear forwards 5s 0s 1 ;//線性動畫
+        -webkit-animation: loading_a linear forwards 5s 0s 1 ;//線性動畫
     }
     </style>
 </head>
