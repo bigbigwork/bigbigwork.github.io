@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="zh">
     <meta charset="UTF-8">
     <title></title>
 </head>
@@ -120,38 +120,33 @@
 </style>
 </head>
 <body>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
+<h2>添加图片效果演示 webkit内核有效</h2>
+<p>选择文件的时候，滚动条会回到最上方。</p>
+<p>所以使用了javascript来记录点击浏览文件前的滚动条位置，并用一个延时在打开文件选择框后恢复滚动条的位置。</p>
+<p>图片可以自适应宽度和高度，并且是居中。</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
+<p>这里假装是一些文字内容</p>
 <h2>添加图片</h2>
 <div id="add_icons" class="add_icons">
 
@@ -195,6 +190,7 @@
             this.parentElement.getElementsByClassName("add_icon_button")[0].style.display='none';
             //
             var img=this.parentElement.getElementsByTagName('img')[0];
+            //获得图片标签
             var files = e.target.files||e.dataTransfer.files;
             var file=files[0]
             console.log(file);
@@ -202,6 +198,7 @@
                 var reader = new FileReader();
                 reader.onload=function(){
                     img.src=this.result;
+                    //装载图片
                 }
                 reader.readAsDataURL(file);
             }
