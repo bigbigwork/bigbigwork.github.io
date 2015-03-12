@@ -14,7 +14,7 @@
     @-webkit-keyframes loading_a {
         0%{
             top: 110%;
-            background-position-x: 0%;
+            background-position-x: 0px;
         }
         100%{
             top: -30%;
@@ -24,7 +24,7 @@
     @-webkit-keyframes loading_b {
         0%{
             top: 110%;
-            background-position-x: 0%;
+            background-position-x: 0px;
         }
         100%{
             top: -30%;
@@ -44,9 +44,9 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background:url(b.svg),url(a.svg);
+        background:url(b.svg),url(a.svg),url(b.svg),url(a.svg);
         background-repeat: repeat-x;
-        background-size: 100% auto,120 auto;
+        background-size: 100% auto,120% auto,150% auto,170% auto;
         display: block;
         content: "";
         -webkit-animation: loading_b linear forwards 8s 0s 1 ;//線性動畫
@@ -57,9 +57,9 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background:url(a.svg),url(b.svg);
+        background:url(a.svg),url(b.svg),url(a.svg),url(b.svg);
         background-repeat: repeat-x;
-        background-size: 100% auto,120 auto;
+        background-size: 100% auto,120% auto,150% auto,170% auto;
         display: block;
         content: "";
         -webkit-animation: loading_a linear forwards 8s 0s 1 ;//線性動畫
