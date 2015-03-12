@@ -128,7 +128,30 @@
 <p>1</p>
 <p>1</p>
 <p>1</p>
-
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
+<p>1</p>
 <h2>添加图片</h2>
 <div id="add_icons" class="add_icons">
 
@@ -165,6 +188,7 @@
     for(i=0;i<inputs.length;i++){
         var input=inputs[i];
         input.onchange=function(e){
+            
             //this.parentElement.getElementsByTagName('img')[0].src=this.value;
             this.parentElement.getElementsByTagName('img')[0].style.display='block';
             this.parentElement.getElementsByClassName("mark")[0].style.display='block';
@@ -195,6 +219,19 @@
             this.parentElement.parentElement.getElementsByTagName('img')[0].src="";
             this.parentElement.parentElement.getElementsByTagName('input')[0].value="";
             this.parentElement.parentElement.getElementsByClassName("add_icon_button")[0].style.display='block';
+        }
+    }
+
+    //记录  scrollY 滚动条的位置
+    var add_icon_buttons=document.getElementById("add_icons").getElementsByClassName("add_icon_button");
+    for(i=0;i<add_icon_buttons.length;i++){
+        var add_icon_button=add_icon_buttons[i];
+        add_icon_button.onclick=function(){
+            scrollY=window.scrollY;
+            setTimeout(function(){
+                window.scroll(0,scrollY);//恢复滚动条的位置
+            },1100);
+            //console.log(scrollY);
         }
     }
 </script>
