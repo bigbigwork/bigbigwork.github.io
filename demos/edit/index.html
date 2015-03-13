@@ -2,6 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=2.0" />
     <title></title>
     <script src="edit.js"></script>
     <link rel="stylesheet" type="text/css" href="edit.css">
@@ -72,8 +73,11 @@
     function edit_h1(){
         
         var selectionContents = range.extractContents();
+        console.log(selectionContents)
         var e = document.createElement("h1");
-        e.appendChild(selectionContents);
+        //e.appendChild(keyword);
+        e.innerHTML=keyword;
+        //range.deleteContents();
         range.insertNode(e);
     }
     function edit_h2(){
