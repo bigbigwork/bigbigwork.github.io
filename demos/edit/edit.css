@@ -1,0 +1,43 @@
+div[contenteditable="true"]{
+	border: solid #ccc 5px; 
+}
+#edit_bar{
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+	-moz-user-select: none; /*火狐*/
+   -webkit-user-select: none;  /*webkit浏览器*/
+   -ms-user-select: none;   /*IE10*/
+   -khtml-user-select: none; /*早期浏览器*/
+   user-select: none;
+}
+#edit_bar span{
+	width: 50px;
+	height: 50px;
+	background-color: #ccc;
+	color: #000;
+	font-size: 18px;
+	line-height: 50px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 10px;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+#upload_pic{
+	position: absolute;
+	top: -1000px;
+}
+.upload_pic{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	background-image: url(insert_image.png);
+	background-size: 90%;
+	background-position: center;
+	background-repeat: no-repeat;
+}

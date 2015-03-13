@@ -3,38 +3,84 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <script src="jquery-2.1.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://summernote.org/bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="http://www.hothuati.com/static/css/summernote.css">
-
-    <link rel="stylesheet" type="text/css" href="http://summernote.org/bower_components/fontawesome/css/font-awesome.css">
-
-    <script type="text/javascript" src="http://www.hothuati.com/static/js/bootstrap/bootstrap.js"></script>
-    <script src="summernote.min.js"></script>
-    <script type="text/javascript" src="http://summernote.org/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="edit.js"></script>
+    <link rel="stylesheet" type="text/css" href="edit.css">
 </head>
 <body>
-<style>
-    body{
-        font-family: "\5FAE\8F6F\96C5\9ED1";
-        font-weight: 100;
-    }
-    
-</style>
-</head>
-<body>
-<h2>编辑器 插件</h2>
-
-<div class="summernote">summernote 1</div>
+<h2>html5 编辑器</h2>
+<div id="edit_bar">
+    <span onmousedown="edit_b()">B</span>
+    <span onmousedown="edit_i()">I</span>
+    <span onmousedown="edit_h1()">H1</span>
+    <span onmousedown="edit_h2()">H2</span>
+    <span>
+        <input name="upload_pic" id="upload_pic" type="file" accept="image/*">
+        <label for="upload_pic" class="upload_pic"></label>
+    </span>
+</div>
+<div class="edit">12345<b>67</b>89edit</div >
 <script>
-    $(document).ready(function() {
-        $('.summernote').summernote({
-          height: 300,   //set editable area's height
-          codemirror: { // codemirror options
-            theme: 'monokai'
-          }
+
+    window.onload=function(){
+        wbEdit.edit(".edit",function(){
+
         });
-    });
+        //
+                document.getElementById("upload_pic").onchange=function(e){
+            //获得图片标签
+            var files = e.target.files||e.dataTransfer.files;
+            var file=files[0];
+            console.log(file);
+            if(file){
+                var reader = new FileReader();
+                reader.onload=function(){
+                    var img=document.createElement("img");
+                    img.src=this.result;
+                    edit.appendChild(img);
+                    //装载图片
+                }
+                reader.readAsDataURL(file);
+            }
+            //
+        }
+        //
+    }
+    function edit_b(){
+        
+        var selectionContents = range.extractContents();
+        var e = document.createElement("b");
+        e.appendChild(selectionContents);
+        range.insertNode(e);
+    }
+    function edit_i(){
+        
+        var selectionContents = range.extractContents();
+        var e = document.createElement("i");
+        e.appendChild(selectionContents);
+        range.insertNode(e);
+    }
+    function edit_h1(){
+        
+        var selectionContents = range.extractContents();
+        var e = document.createElement("h1");
+        e.appendChild(selectionContents);
+        range.insertNode(e);
+    }
+    function edit_h2(){
+        
+        var selectionContents = range.extractContents();
+        var e = document.createElement("h2");
+        e.appendChild(selectionContents);
+        range.insertNode(e);
+    }
+    function b(){
+        var range = window.getSelection().getRangeAt(0);
+        var selectionContents = range.extractContents();
+        var div = document.createElement("div");
+        div.style.color = "yellow";
+        div.appendChild(selectionContents);
+        range.insertNode(div);
+    }
 </script>
 </body>
 </html>
