@@ -16,3 +16,9 @@ var wbEdit={
 	}
 }
 		
+function edit_info_open(){
+	document.querySelector("#edit_info").style.display="block";
+}
+function edit_info_close(){
+	document.querySelector("#edit_info").style.display="none";
+}
