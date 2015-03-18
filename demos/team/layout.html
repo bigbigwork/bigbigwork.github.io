@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>team demo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            width: 100%;
+        }
+        h2{
+            width: 100%;
+            text-align: center;
+            margin:20px auto;
+            display: block;
+        }
+        .facebox{
+            width: 580px;
+            height: auto;
+            margin:20px auto;
+            overflow: hidden;
+        }
+
+        .face{
+            width:150px;
+            height: 150px;
+            border: solid #666 1px;
+            margin: 10px;
+            position: relative;
+            z-index: 0;
+            display: inline-block;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+        .face img{
+            max-width: 100%;
+            max-height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: 1;
+        }
+        .face:hover{
+            border: solid #f00 3px;
+            margin: 7px;
+            cursor: pointer;
+            content: "";
+            -webkit-animation: flip linear forwards .72s 0s 1 ;
+            z-index: 100;
+        }
+        .face:hover:before{
+            width: 100%;
+            height: 20%;
+            position: absolute;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            text-align: center;
+            line-height: 2rem;
+            display: block;
+            content: attr(data-title);
+            z-index: 9;
+            -webkit-animation: touchTips linear forwards .72s 0s 1 ;
+        }
+        /**/
+        @-webkit-keyframes touchTips {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(16px)
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0)
+            }
+        }
+        @-webkit-keyframes starwars {
+            0% { opacity: 0; transform: perspective(200px) scale(3) translateY(180px) rotateX(80deg); }
+            60% { opacity: 1; transform: perspective(200px) scale(1) rotateX(60deg) }
+            100% { opacity: 1; transform: perspective(200px) scale(1) rotateX(0deg) }
+        }
+        @-webkit-keyframes flip {
+            0% { opacity: 0;
+                transform: perspective(400px) rotateY(0);
+                animation-timing-function: ease-out; }
+            40% {
+                transform: perspective(400px) translateZ(150px) rotateY(170deg);
+                animation-timing-function: ease-out; }
+            50% {
+                transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+                animation-timing-function: ease-in; }
+            80% {
+                transform: perspective(400px) rotateY(360deg) scale(.95);
+                animation-timing-function: ease-in; }
+            100% {
+                opacity: 1;
+                transform: perspective(400px) scale(1);
+                animation-timing-function: ease-in; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h2>卡片式图片列表演示</h2>
+        <div class="facebox">
+            <div class="faces">
+                <div  class="face" data-title="111">
+                    <img src="images/0.jpg">
+                </div>
+                <div  class="face" data-title="222">
+                    <img src="images/1.jpg">
+                </div>
+                <div  class="face" data-title="333">
+                    <img src="images/2.jpg">
+                </div>
+                <div  class="face" data-title="444">
+                    <img src="images/3.jpg">
+                </div>
+                <div  class="face" data-title="555">
+                    <img src="images/4.jpg">
+                </div>
+                <div  class="face" data-title="666">
+                    <img src="images/5.jpg">
+                </div>
+                <div  class="face" data-title="777">
+                    <img src="images/6.jpg">
+                </div>
+                <div  class="face" data-title="888">
+                    <img src="images/7.jpg">
+                </div>
+                <div  class="face" data-title="999">
+                    <img src="images/8.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

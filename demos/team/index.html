@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>team demo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            width: 100%;
+        }
+
+        .facebox{
+            width: 600px;
+            height: 400px;
+            margin:20px auto;
+            background: #ccc;
+            position: relative;
+        }
+
+        .face{
+            width: 80px;
+            height: 80px;
+            border: solid #666 1px;
+            margin: -1px;
+            float: left;
+        }
+        .face:hover{
+            border: solid #f00 3px;
+            margin: -3px;
+            cursor: pointer;
+        }
+        .face:hover:before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            background: #0000ee;
+            display: block;
+            content: attr(data-img);
+            border-radius: 20px;
+            border: solid  5px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="facebox">
+            <div class="faces">
+                <div  class="face" data-img="images/0.jpg"></div>
+                <div  class="face" data-img="images/1.jpg"></div>
+                <div  class="face" data-img="images/2.jpg"></div>
+            </div>
+            <div class="info">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
