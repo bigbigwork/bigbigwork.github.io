@@ -75,15 +75,23 @@ body {
     user-select: none;
     -webkit-touch-callout: none;
     -webkit-tap-highlight-color: transparent;
-    -webkit-text-size-adjust: 100% !important
+    -webkit-text-size-adjust: 100% !important;
+    counter-reset: loadingvalue;/*设置载入进度值*/
 }
 
 p{
     text-align: justify;
     text-align-last: justify;
 }
+.res{
+    position: fixed;
+    top: -3000px;
+}
 /* 页面初始化结束 */
 /*  常用组件开始  */
+.loading_add{
+    counter-increment: loadingvalue 20;
+}
 .loader {
     position: absolute;
     z-index: 9;
@@ -95,7 +103,10 @@ p{
     width: 100%;
     height: 100%;
     color: #fff;
-    background-color: #2e3132
+    background-color: #2e3132;
+    -webkit-animation: loading_value linear forwards .72s 0s 1 ;
+    -o-animation: loading_value linear forwards .72s 0s 1 ;
+    animation:loading_value linear forwards .72s 0s 1 ;
 }
 
 .loader-graph, .loader-progress {
@@ -139,9 +150,15 @@ p{
     font-size: 14px;
     text-align: center;
     padding: 20px 0;
-    line-height: 24px
+    line-height: 24px;
 }
-
+.loader-progress:after {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 24px;
+    content: counter(loadingvalue) "%";
+}
 .music {
     position: absolute;
     z-index: 10;

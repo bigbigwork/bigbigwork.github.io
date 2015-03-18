@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        body {
+            counter-reset: loadingvalue;
+        }
+        input:checked {
+            counter-increment: loadingvalue;
+        }
+        .out:before{
+            display: block;
+            content: counter(loadingvalue);
+        }
+        button:hover{
+            counter-increment: loadingvalue 2;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+    <button>oooooo</button>
+    <div class="out"></div>
+</body>
+</html>
