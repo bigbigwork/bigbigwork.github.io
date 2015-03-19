@@ -1,6 +1,5 @@
 
 
-
 .imgListInit{overflow: hidden;height: 0;}
 .imgList{letter-spacing: -3px;font-size: 0px;line-height: 0px;margin: 0 auto;background-color: rgb(245,245,245);}
 .imgList .imgItem{display: inline-block;*display: inline;zoom:1;vertical-align: top;overflow: hidden;}
