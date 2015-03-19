@@ -15,12 +15,25 @@ function include_css(path){
     fileref.type = "text/css";
     fileref.href = path;
 }
+
+function hide(id){
+    document.getElementById(id).className="hide";
+}
+function show(id){
+    document.getElementById(id).className=id;
+}
+function make(tag){
+    return document.createElement(tag);
+}
+function remove_html(id){
+    document.getElementById(id).innerHTML="";
+}
 window.onload=function(){
     var login_value=0;
-    document.getElementById("res").innerHTML="";
+    remove_html("res");
     function loading(){
         login_value++;
-        var e=document.createElement("div");
+        var e=make("div");
         e.className="loading_add";
         document.getElementById("res").appendChild(e);
         setTimeout(function(){
@@ -29,9 +42,9 @@ window.onload=function(){
                 setTimeout(function(){
                     document.getElementById("res").innerHTML="";
                     document.getElementById("works").className="imgList";
-                    document.getElementById("loader").className="hide";
+                    hide("loader");
                     include_js("js/photo.js");
-
+                    show("footer");
                 },1500);
 
             }else{
