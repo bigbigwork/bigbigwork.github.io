@@ -20,7 +20,7 @@ window.onload=function(){
             }else{
                 loading();
             }
-        },20);
+        },15);
     }
     loading();
 }
