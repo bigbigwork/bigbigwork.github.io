@@ -42,6 +42,9 @@ layout: post
         .toggle:checked ~ .alert {
             display: block;
         }
+        .toggle:checked ~ body {
+            z-index: -99;
+        }
         .toggle{
             position: fixed;
             top: -5000px;
