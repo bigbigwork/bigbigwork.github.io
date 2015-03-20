@@ -38,7 +38,7 @@
         background-position: 0px 0px,0px 0px;
     }
 }
-button{
+button,.button{
     width: auto;
     padding: 0px 10px 0px 10px;
     height: 40px;
@@ -61,7 +61,7 @@ button.select{
     background-image: url(/res/button_bg.png),-webkit-linear-gradient(top,#f9291e,#ff0c00);
 
 }
-button:hover{
+button:hover,.button:hover{
     -webkit-animation: button_hover 0.5s linear 0s 1;
 }
 input{
