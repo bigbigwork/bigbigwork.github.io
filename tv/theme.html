@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .center{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .hide{
+            display: none;
+        }
+        #wrap{
+            background: #ccc;
+        }
+        #theme_1:checked ~ .wrap {
+            background: #f00;
+        }
+        #theme_2:checked ~ .wrap {
+            background: #f1c40f;
+        }
+        .toggle{
+            position: fixed;
+            top: -5000px;
+        }
+        .click{
+            cursor: pointer;
+        }
+        .box{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        .theme{
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            margin: 10px;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap" class="wrap">
+        <input type="checkbox" id="theme_1" class="toggle">
+        <input type="checkbox" id="theme_2" class="toggle">
+        <input type="checkbox" id="theme_3" class="toggle">
+        <input type="checkbox" id="theme_4" class="toggle">
+        <input type="checkbox" id="theme_5" class="toggle">
+        <input type="checkbox" id="theme_6" class="toggle">
+        <label class="click theme" for="theme_1">theme_1</label>
+        <label class="click theme" for="theme_2">theme_2</label>
+        <label class="click theme" for="theme_3">theme_3</label>
+        <label class="click theme" for="theme_4">theme_4</label>
+        <label class="click theme" for="theme_5">theme_5</label>
+        <label class="click theme" for="theme_6">theme_6</label>
+        <div class="wrap box">123</div>
+    </div>
+</body>
+</html>

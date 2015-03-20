@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<!--[if lt IE 7 ]>
+<html class="ie6" lang="zh-cmn-Hans"><![endif]-->
+<!--[if IE 7 ]>
+<html class="ie7" lang="zh-cmn-Hans"><![endif]-->
+<!--[if IE 8 ]>
+<html class="ie8" lang="zh-cmn-Hans"><![endif]-->
+<!--[if IE 9 ]>
+<html class="ie9" lang="zh-cmn-Hans"><![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="小明">
+    <meta name="viewport" content="initial-scale=2.0,maximum-scale=1,user-scalable=no">
+    <meta property="author" content="codetyphon"/>
+    <meta name="twitter:site" content="@codetyphon"/>
+    <title>{{ page.title }}</title>
+    <meta name="description" content="小明">
+    <meta name="apple-mobile-web-app-title" content="小明">
+    <!-- 添加到主屏后的标题（iOS 6 新增） -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <!-- 是否启用 WebApp 全屏模式 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <!-- 设置状态栏的背景颜色，只有在 `"apple-mobile-web-app-capable" content="yes"` 时生效 -->
+    <!-- icon -->
+
+    <link rel="apple-touch-icon-precomposed" href="/icons/apple-touch-icon-57x57-precomposed.png"/>
+    <!-- iPhone 和 iTouch，默认 57x57 像素，必须有 -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/icons/apple-touch-icon-72x72-precomposed.png"/>
+    <!-- iPad，72x72 像素，可以没有，但推荐有 -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/icons/apple-touch-icon-114x114-precomposed.png"/>
+    <!-- Retina iPhone 和 Retina iTouch，114x114 像素，可以没有，但推荐有 -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/icons/apple-touch-icon-144x144-precomposed.png"/>
+    <!-- Retina iPad，144x144 像素，可以没有，但推荐有 -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="icons/retinahd_icon.png">
+
+
+    <!-- 启动画面 -->
+    <link rel="apple-touch-startup-image" sizes="768x1004" href="/res/splash-screen-768x1004.png"/>
+    <!-- iPad 竖屏 768 x 1004（标准分辨率） -->
+    <link rel="apple-touch-startup-image" sizes="1536x2008" href="/res/splash-screen-1536x2008.png"/>
+    <!-- iPad 竖屏 1536x2008（Retina） -->
+    <link rel="apple-touch-startup-image" sizes="1024x748" href="/res/Default-Portrait-1024x748.png"/>
+    <!-- iPad 横屏 1024x748（标准分辨率） -->
+    <link rel="apple-touch-startup-image" sizes="2048x1496" href="/res/splash-screen-2048x1496.png"/>
+    <!-- iPad 横屏 2048x1496（Retina） -->
+    <link rel="apple-touch-startup-image" href="/res/splash-screen-320x480.png"/>
+    <!-- iPhone/iPod Touch 竖屏 320x480 (标准分辨率) -->
+    <link rel="apple-touch-startup-image" sizes="640x960" href="/res/splash-screen-640x960.png"/>
+    <!-- iPhone/iPod Touch 竖屏 640x960 (Retina) -->
+    <link rel="apple-touch-startup-image" sizes="640x1136" href="/res/splash-screen-640x1136.png"/>
+    <!-- iPhone 5/iPod Touch 5 竖屏 640x1136 (Retina) -->
+    <!-- 启动画面结束 -->
+    <!--
+    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL"> <!-- 添加智能 App 广告条 Smart App Banner（iOS 6+ Safari） -->
+    <link rel="apple-touch-startup-image" href="launch6.png" media="(device-width: 375px)">
+    <link rel="apple-touch-startup-image" href="launch6plus.png" media="(device-width: 414px)">
+    <meta name="msapplication-TileColor" content="#000"/>
+    <!-- Windows 8 磁贴颜色 -->
+    <meta name="msapplication-TileImage" content="icon.png"/>
+    <!-- Windows 8 磁贴图标 -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <!-- 设置苹果工具栏颜色 -->
+    <meta content="telephone=no" name="format-detection"/>
+    <!-- 忽略数字识别为电话 -->
+    <meta content="email=no" name="format-detection"/>
+    <!-- 忽略email识别 -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml"/>
+    <!-- 添加 RSS 订阅 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+    <script src="/js/app.js"></script>
+    <link rel="apple-touch-icon" size="48*48" href="http://www.bigbigwork.com/icons/g.png"/>
+    <link rel="apple-touch-icon" size="72*72" href="http://www.bigbigwork.com/icons/g.png"/>
+    <link rel="apple-touch-icon" size="96*96" href="http://www.bigbigwork.com/icons/g.png"/>
+    <link rel="apple-touch-icon" size="144*144" href="http://www.bigbigwork.com/icons/g.png"/>
+    <link rel="apple-touch-icon" size="192*192" href="http://www.bigbigwork.com/icons/g.png"/>
+    <style>
+        html {
+            font-size: 62.5%;
+            font-family: "\5FAE\8F6F\96C5\9ED1", Tahoma;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-font-smoothing: subpixel-antialiased;
+            /*
+            -webkit-transform: translate3d(0, 0, 0);
+            */
+            text-align: justify;
+            text-justify: distribute-all-lines; /*ie6-8*/
+            text-align-last: justify; /* ie9*/
+            -moz-text-align-last: justify; /*ff*/
+            -webkit-text-align-last: justify; /*chrome 20+*/
+            outline: 0;
+            /* 禁止用户选中文本
+            -webkit-user-select: none;
+            user-select: none;
+            */
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-text-size-adjust: 100% !important;
+            counter-reset: loadingvalue; /*设置载入进度值*/
+            text-align: center;
+            -webkit-appearance: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        p {
+            text-align: justify;
+            text-align-last: justify;
+        }
+
+        .nav {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .item {
+            width: 96%;
+            height: auto;
+            margin: 20px auto;
+            max-width: 960px;
+        }
+
+        #post {
+        }
+
+        h1, h2 {
+            margin: 0 0 20px 0;
+        }
+
+        .footer {
+            background: #292929;
+            color: #cacaca;
+            width: 100%;
+            height: auto;
+            margin: 20px auto;
+            padding: 30px 0px 30px 0px;
+        }
+
+        body {
+            font-size: 1.8em;
+        }
+
+        *, :after, :before {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        .hide {
+            display: none;
+        }
+
+        @-webkit-keyframes tohide {
+            0% {
+                opacity: 1
+            }
+            100% {
+                opacity: 0
+            }
+        }
+
+        @keyframes tohide {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .tohide {
+            -webkit-animation: tohide 1.5s linear forwards 1;
+            -o-animation: tohide 1.5s linear forwards 1;
+            animation: tohide 1.5s linear forwards 1
+        }
+
+        .loading_add {
+            counter-increment: loadingvalue;
+        }
+
+        #loader {
+            background-color: #2e3132;
+            position: fixed;
+            z-index: 9;
+            overflow: hidden;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+        }
+
+        .loader {
+            -webkit-animation: loading_value linear forwards .72s 0s 1;
+            -o-animation: loading_value linear forwards .72s 0s 1;
+            animation: loading_value linear forwards .72s 0s 1;
+        }
+
+        .loader-graph, .loader-progress {
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 64px;
+            height: 64px;
+            margin: auto;
+        }
+
+        .loader-graph {
+            color: transparent;
+            text-align: center;
+            border-top: 5px solid rgba(255, 255, 255, .2);
+            border-right: 5px solid rgba(255, 255, 255, .2);
+            border-bottom: 5px solid rgba(255, 255, 255, .2);
+            border-left: 5px solid #fff;
+            border-radius: 32px;
+            -webkit-animation: rotate .72s linear infinite;
+            -o-animation: rotate .72s linear infinite;
+            animation: rotate .72s linear infinite
+        }
+
+        .loader-text {
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+            line-height: 24px;
+            font-size: 9px;
+            top: 50%;
+            text-align: center;
+            margin-top: 3em
+        }
+
+        .loader-progress {
+            font-size: 14px;
+            text-align: center;
+            padding: 20px 0;
+            line-height: 24px;
+        }
+
+        .loader-progress:after {
+            font-size: 14px;
+            text-align: center;
+            padding: 20px 0;
+            line-height: 24px;
+            /*content: counter(loadingvalue) "%";*/
+        }
+
+        @-webkit-keyframes rotate {
+            0% {
+                -webkit-transform: rotate(360deg)
+            }
+            100% {
+                -webkit-transform: rotate(0deg)
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+            100% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="loader" ontouchmove="return !1" class="loader">
+    <div class="loader-graph"></div>
+    <div id="progress" class="loader-progress"></div>
+    <div class="loader-text">LOADING...</div>
+</div>
+<div id="wrap" class="hide">
+    <h1><a href="/">{{ page.title }}</a></h1>
+
+    <p class="nav">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+    </p>
+
+    <div class="item">
+        　　　　{{ content }}
+    </div>
+    <div class="footer">
+        <div class="copyright">Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script>
+            <a href="http://www.xiaoming.mobi/" target="_blank">小明</a> All Rights Reserved.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
