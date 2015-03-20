@@ -48,25 +48,29 @@
             top: -5000px;
         }
         .close_icon{
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
             display: block;
-            background: #f00;
             position: absolute;
-            right: -20px;
-            top: -20px;
+            right: -15px;
+            top: -15px;
             cursor: pointer;
             border-radius: 50%;
             box-shadow: 0 0 10px #000;
+            background: url(icons/close.svg);
+            background-size: 100%;
+        }
+        .click{
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <div id="wrap">
         <input type="checkbox" id="close" class="toggle">
-        <label for="close">Click me 2!</label>
+        <label class="click" for="close">pay</label>
         <div class="pay center alert hide">
-            <label class="close_icon" for="close">Click me!</label>
+            <label class="close_icon" for="close"></label>
         </div>
     </div>
 </body>
