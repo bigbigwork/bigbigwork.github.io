@@ -14,16 +14,17 @@ layout: post
         .bg_ccc{
             background: #ccc;
         }
+
+        .hide{
+            display: none;
+        }
         .alert{
             background: #fff;
             border-radius: 20px;
             box-shadow: 0 0 100px #000;
             z-index: 199;
         }
-        .hide{
-            display: none;
-        }
-        .alert:after{
+        .alert:before{
             display: block;
             position: fixed;
             left: 0;
@@ -33,6 +34,19 @@ layout: post
             content: "";
             background:  rgba(0,0,0,0.8);
             z-index: 99;
+        }
+        .alert:after{
+        	display: block;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 100px #000;
+            z-index: 100;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            content: "";
         }
         .pay{
             width: 500px;
@@ -58,6 +72,7 @@ layout: post
             box-shadow: 0 0 10px #000;
             background: url(icons/close.svg);
             background-size: 100%;
+            z-index: 199;
         }
         .click{
             cursor: pointer;
