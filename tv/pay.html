@@ -3,67 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <style>
-        .center{
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-        }
-        .bg_ccc{
-            background: #ccc;
-        }
-        .alert{
-            background: #fff;
-            border-radius: 20px;
-            box-shadow: 0 0 100px #000;
 
-        }
-        .hide{
-            display: none;
-        }
-        .alert:after{
-            display: block;
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            content: "";
-            background:  rgba(0,0,0,0.8);
-            z-index: -1;
-        }
-        .pay{
-            width: 500px;
-            height: 300px;
-            background: #ccc;
-        }
-        .toggle:checked ~ .alert {
-            display: block;
-        }
-        .toggle{
-            position: fixed;
-            top: -5000px;
-        }
-        .close_icon{
-            width: 30px;
-            height: 30px;
-            display: block;
-            position: absolute;
-            right: -15px;
-            top: -15px;
-            cursor: pointer;
-            border-radius: 50%;
-            box-shadow: 0 0 10px #000;
-            background: url(icons/close.svg);
-            background-size: 100%;
-        }
-        .click{
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
     <div id="wrap">
@@ -74,4 +14,79 @@
         </div>
     </div>
 </body>
-</html>
+</html><style>
+    .center{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .bg_ccc{
+        background: #ccc;
+    }
+
+    .hide{
+        display: none;
+    }
+    .alert{
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 100px #000;
+        z-index: 199;
+    }
+    .alert:before{
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        content: "";
+        background:  rgba(0,0,0,0.8);
+        z-index: 99;
+    }
+    .alert:after{
+        display: block;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 100px #000;
+        z-index: 100;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        content: "";
+    }
+    .pay{
+        width: 500px;
+        height: 300px;
+        background: #ccc;
+    }
+    .toggle:checked ~ .alert {
+        display: block;
+    }
+    .toggle{
+        position: fixed;
+        top: -5000px;
+    }
+    .close_icon{
+        width: 30px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        right: -15px;
+        top: -15px;
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #000;
+        background: url(icons/close.svg);
+        background-size: 100%;
+        z-index: 199;
+    }
+    .click{
+        cursor: pointer;
+    }
+</style>
