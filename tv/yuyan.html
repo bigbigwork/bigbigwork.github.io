@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>语言</title>
+
+</head>
+<body>
+    <div id="wrap">
+        <div>< 个人中心</div>
+            <h2>语言</h2>
+            
+        <div class="about center padding">
+            <div>
+                
+                
+                
+            </div>
+            <div class="block">
+                <input class="select" type="radio" name="lang" id="jian">
+                <label class="jian" for="jian">中文（简体）</label>
+            </div>
+            <div class="block">
+                <input class="select" type="radio" name="lang" id="fan">
+                <label class="fan" for="fan">中文（繁体）</label>
+            </div>
+            <div class="block">
+                <input class="select" type="radio" name="lang" id="en">
+                <label class="en" for="en">English</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html><style>
+    body{
+        background: #ccc;
+        text-align: center;
+    }
+    label{
+        margin: 10px;
+        border: solid #ccc 1px;
+        display: block;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .inline{
+        display: inline-block;
+    }
+    .block{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .about{
+        width: 500px;
+        height:300px;
+        background: #fff;
+    }
+    .center{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .hide{
+        display: none;
+    }
+    .alert{
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 100px #000;
+        z-index: 199;
+    }
+    .center_x{
+        margin: 0 auto;
+    }
+    p{
+        text-align: left;
+    }
+    .padding{
+        padding: 10px;
+    }
+    .select{
+        display: none;
+    }
+        #jian:checked ~ .jian {
+            border: solid #f00 1px;
+        }
+    #fan:checked ~ .fan {
+            border: solid #f00 1px;
+        }
+    #en:checked ~ .en {
+            border: solid #f00 1px;
+        }
+
+</style>

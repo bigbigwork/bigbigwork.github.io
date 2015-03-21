@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>纯css实现字体的大中小</title>
+<style>
+    body{
+        background: #ccc;
+        text-align: center;
+    }
+
+    .menu{
+        margin: 10px;
+        width: 100%;
+    }
+    .inline{
+        display: inline-block;
+    }
+    .block{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .text{
+        width: 80%;
+        max-width: 800px;
+        height:auto;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 120px rgba(0,0,0,0.5);
+    }
+    .info{
+        width:90%;
+        height:auto;
+        background:rgba(0,0,0,.1);
+        color: #000;
+        padding: 10px;
+        margin: 0 auto;
+        text-align: left;
+        line-height: 1.5em;
+        font-size: 15px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .center{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .center_x{
+        margin:30px auto;
+    }
+    .hide{
+        display: none;
+    }
+    .alert{
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 100px #000;
+        z-index: 199;
+    }
+    p{
+        text-align: left;
+    }
+    .padding{
+        padding: 10px;
+    }
+    .select{
+        display: none;
+    }
+    
+    #font-size-big:checked ~ .menu .font-size-big {
+            background: pink;
+            color: #000;
+            font-weight: 800;
+    }
+    #font-size-normal:checked ~ .menu .font-size-normal {
+            background: pink;
+            color: #000;
+            font-weight: 800;
+    }
+    #font-size-small:checked ~ .menu .font-size-small {
+            background: pink;
+            color: #000;
+            font-weight: 800;
+    }
+
+    #font-size-big:checked ~ .info {
+        font-size: 20px;
+    }
+#font-size-normal:checked ~ .info {
+        font-size: 15px;
+    }
+#font-size-small:checked ~ .info {
+        font-size: 10px;
+    }
+    .click{
+        cursor: pointer;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="text padding center_x">
+            <h2>纯css实现字体的大中小</h2>
+            <input class="select" type="radio" name="font-size" id="font-size-big">
+            <input class="select" type="radio" checked name="font-size" id="font-size-normal">
+            <input class="select" type="radio" name="font-size" id="font-size-small">
+            <div class="menu">
+                <label class="font-size-big click inline padding" for="font-size-big">Big</label>
+                <label class="font-size-normal click inline padding" for="font-size-normal">normal</label>
+                <label class="font-size-small click inline padding" for="font-size-small">Small</label>
+            </div>
+            <div class="info">
+                <p>当我还只有六岁的时候，在一本描写原始森林的名叫《真实的故事》的书中， 看到了一副精彩的插画，画的是一条蟒蛇正在吞食一只大野兽。页头上就是那副画的摹本。</p>
+                <p>这本书中写道：“这些蟒蛇把它们的猎获物不加咀嚼地囫囵吞下，尔后就不 能再动弹了；它们就在长长的六个月的睡眠中消化这些食物。”
+当时，我对丛林中的奇遇想得很多，于是，我也用彩色铅笔画出了我的第一副图画。</p>
+                <p>我把我的这副杰作拿给大人看，我问他们我的画是不是叫他们害怕。
+他们回答我说：“一顶帽子有什么可怕的？”</p>
+                <p>我画的不是帽子，是一条巨蟒在消化着一头大象。于是我又把巨蟒肚子里的情况画了出来，以便让大人们能够看懂。这些大人总是需要解释。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
