@@ -20,14 +20,19 @@ body{
 
     flex-flow: column;
 }
-.column{
-    /**display: inline-block;*/
+.flow{
     display: flex;
-    flex-flow: row;
-
 }
-.box{
+.row{
+    /* zuoyou */
+    flex-flow: row;
+}
+.column{
+    /* shangxia */
+    flex-flow: column;
+}
 
+.box{
     background: #ccc;
-    margin: 10px;
+    padding: 10px;
 }

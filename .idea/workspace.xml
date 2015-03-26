@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72db4c65-9269-4979-87b7-f7fa19b71e14" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/css/baselayout.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/js/layout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/tv.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/zaixianzhifu_1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/baoyuezhifu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/buyed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/dianyingpindao.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/gerenzhongxin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/quanqiuzhibo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/tiyanqu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tv/css/baselayout.css" afterPath="$PROJECT_DIR$/tv/css/baselayout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tv/tuijian.html" afterPath="$PROJECT_DIR$/tv/tuijian.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tv/tv.html" afterPath="$PROJECT_DIR$/tv/tv.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bigbigwork.github.io.iws" />
@@ -33,8 +38,78 @@
       <file leaf-file-name="tv.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tv/tv.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.571428" vertical-offset="0" max-vertical-offset="684">
-              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <state vertical-scroll-proportion="-12.892858" vertical-offset="0" max-vertical-offset="684">
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buyed.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tv/buyed.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.214285" vertical-offset="2" max-vertical-offset="1349">
+              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tiyanqu.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tv/tiyanqu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-27.964285" vertical-offset="91" max-vertical-offset="1083">
+              <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gerenzhongxin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tv/gerenzhongxin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.642857" vertical-offset="0" max-vertical-offset="912">
+              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="baoyuezhifu.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tv/baoyuezhifu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.571428" vertical-offset="0" max-vertical-offset="760">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dianyingpindao.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tv/dianyingpindao.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.0" vertical-offset="0" max-vertical-offset="912">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quanqiuzhibo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tv/quanqiuzhibo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="798">
+              <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tuijian.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tv/tuijian.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.41007194" vertical-offset="0" max-vertical-offset="834">
+              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -43,18 +118,18 @@
       <file leaf-file-name="layout.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tv/js/layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
+            <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="437">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="baselayout.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="baselayout.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tv/css/baselayout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44083527" vertical-offset="0" max-vertical-offset="862">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="817">
+              <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -68,13 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/author/index.html" />
-        <option value="$PROJECT_DIR$/html5/demos/button/index.html" />
-        <option value="$PROJECT_DIR$/demo.html" />
-        <option value="$PROJECT_DIR$/html5/oldgame/mario.html" />
-        <option value="$PROJECT_DIR$/html5/oldgame/crow.html" />
-        <option value="$PROJECT_DIR$/tree.js" />
-        <option value="$PROJECT_DIR$/common.css" />
         <option value="$PROJECT_DIR$/h5m/3.html" />
         <option value="$PROJECT_DIR$/h5m/2.html" />
         <option value="$PROJECT_DIR$/html5/game/num/15.html" />
@@ -117,8 +185,15 @@
         <option value="$PROJECT_DIR$/tv/zaixianzhifu.html" />
         <option value="$PROJECT_DIR$/tv/zaixianzhifu_1.html" />
         <option value="$PROJECT_DIR$/tv/js/layout.js" />
-        <option value="$PROJECT_DIR$/tv/css/baselayout.css" />
         <option value="$PROJECT_DIR$/tv/tv.html" />
+        <option value="$PROJECT_DIR$/tv/buyed.html" />
+        <option value="$PROJECT_DIR$/tv/tiyanqu.html" />
+        <option value="$PROJECT_DIR$/tv/gerenzhongxin.html" />
+        <option value="$PROJECT_DIR$/tv/css/baselayout.css" />
+        <option value="$PROJECT_DIR$/tv/baoyuezhifu.html" />
+        <option value="$PROJECT_DIR$/tv/dianyingpindao.html" />
+        <option value="$PROJECT_DIR$/tv/quanqiuzhibo.html" />
+        <option value="$PROJECT_DIR$/tv/tuijian.html" />
       </list>
     </option>
   </component>
@@ -154,7 +229,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -225,6 +299,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,40 +322,36 @@
       <recent name="C:\Users\js\Documents\bigbigwork.github.io\demos\team" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.tv.html">
-    <configuration default="false" name="say.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/demos/say.html">
+  <component name="RunManager" selected="JavaScript Debug.tuijian.html">
+    <configuration default="false" name="gerenzhongxin.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/gerenzhongxin.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="code.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/code.html">
+    <configuration default="false" name="baoyuezhifu.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/baoyuezhifu.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="zaixianzhifu.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/zaixianzhifu.html">
+    <configuration default="false" name="dianyingpindao.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/dianyingpindao.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="zaixianzhifu_1.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/zaixianzhifu_1.html">
+    <configuration default="false" name="quanqiuzhibo.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/quanqiuzhibo.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="tv.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/tv.html">
+    <configuration default="false" name="tuijian.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/tuijian.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -288,6 +359,10 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -312,19 +387,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.say.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.code.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.zaixianzhifu.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.zaixianzhifu_1.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.tv.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.gerenzhongxin.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.baoyuezhifu.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.dianyingpindao.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.quanqiuzhibo.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.tuijian.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tv.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.zaixianzhifu_1.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.zaixianzhifu.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.code.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.say.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tuijian.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.quanqiuzhibo.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.dianyingpindao.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.baoyuezhifu.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.gerenzhongxin.html" />
       </list>
     </recent_temporary>
   </component>
@@ -342,7 +417,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="1" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -358,11 +433,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -388,55 +463,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html5/oldgame/crow.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58992803" vertical-offset="3194" max-vertical-offset="4028">
-          <caret line="194" column="27" selection-start-line="194" selection-start-column="27" selection-end-line="194" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h5m/2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41007194" vertical-offset="1425" max-vertical-offset="5529">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h5m/m/demo.dae">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="36670">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50765604" vertical-offset="15339" max-vertical-offset="199880">
-          <caret line="830" column="31" selection-start-line="830" selection-start-column="31" selection-end-line="830" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6473318" vertical-offset="12" max-vertical-offset="874">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html5/game/num/15.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9544364" vertical-offset="12922" max-vertical-offset="13832">
-          <caret line="722" column="7" selection-start-line="722" selection-start-column="7" selection-end-line="722" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h5m/3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="3475" max-vertical-offset="5529">
-          <caret line="197" column="31" selection-start-line="197" selection-start-column="10" selection-end-line="197" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bigGame/css.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
@@ -714,7 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3441247" vertical-offset="0" max-vertical-offset="1558">
           <caret line="59" column="7" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -722,15 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47841728" vertical-offset="0" max-vertical-offset="1634">
           <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tv/tv.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.571428" vertical-offset="0" max-vertical-offset="684">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,10 +758,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tv/tv.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.892858" vertical-offset="0" max-vertical-offset="684">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tv/tiyanqu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.964285" vertical-offset="91" max-vertical-offset="1083">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tv/buyed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.214285" vertical-offset="2" max-vertical-offset="1349">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tv/css/baselayout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44083527" vertical-offset="0" max-vertical-offset="862">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="817">
+          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tv/gerenzhongxin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.642857" vertical-offset="0" max-vertical-offset="912">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tv/baoyuezhifu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.571428" vertical-offset="0" max-vertical-offset="760">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tv/dianyingpindao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.0" vertical-offset="0" max-vertical-offset="912">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tv/quanqiuzhibo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="798">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tv/tuijian.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41007194" vertical-offset="0" max-vertical-offset="834">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
           <folding />
         </state>
       </provider>
