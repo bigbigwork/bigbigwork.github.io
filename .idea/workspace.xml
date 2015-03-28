@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72db4c65-9269-4979-87b7-f7fa19b71e14" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/baoyuezhifu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/buyed.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/dianyingpindao.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/gerenzhongxin.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/quanqiuzhibo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/tiyanqu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tv/css/baselayout.css" afterPath="$PROJECT_DIR$/tv/css/baselayout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tv/tuijian.html" afterPath="$PROJECT_DIR$/tv/tuijian.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tv/tv.html" afterPath="$PROJECT_DIR$/tv/tv.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tv/zaixianzhifutishi.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tv/yuyan.html" afterPath="$PROJECT_DIR$/tv/yuyan.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tv/zuijinguankan.html" afterPath="$PROJECT_DIR$/tv/zuijinguankan.html" />
     </list>
     <ignored path="bigbigwork.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,31 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tv.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tv/tv.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.892858" vertical-offset="0" max-vertical-offset="684">
-              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="buyed.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tv/buyed.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.214285" vertical-offset="2" max-vertical-offset="1349">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="1349">
               <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tiyanqu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tv/tiyanqu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.964285" vertical-offset="91" max-vertical-offset="1083">
-              <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -68,7 +42,7 @@
       <file leaf-file-name="gerenzhongxin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tv/gerenzhongxin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.642857" vertical-offset="0" max-vertical-offset="912">
+            <state vertical-scroll-proportion="0.0" vertical-offset="494" max-vertical-offset="912">
               <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
               <folding />
             </state>
@@ -78,7 +52,7 @@
       <file leaf-file-name="baoyuezhifu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tv/baoyuezhifu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.571428" vertical-offset="0" max-vertical-offset="760">
+            <state vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="760">
               <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
               <folding />
             </state>
@@ -88,7 +62,7 @@
       <file leaf-file-name="dianyingpindao.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tv/dianyingpindao.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.0" vertical-offset="0" max-vertical-offset="912">
+            <state vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="912">
               <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
               <folding />
             </state>
@@ -98,28 +72,48 @@
       <file leaf-file-name="quanqiuzhibo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tv/quanqiuzhibo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="798">
+            <state vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="798">
               <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tuijian.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tuijian.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tv/tuijian.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41007194" vertical-offset="0" max-vertical-offset="834">
-              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+            <state vertical-scroll-proportion="-10.857142" vertical-offset="247" max-vertical-offset="741">
+              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tv/js/layout.js">
+      <file leaf-file-name="yuyan.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tv/yuyan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="437">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state vertical-scroll-proportion="-12.892858" vertical-offset="0" max-vertical-offset="589">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zuijinguankan.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tv/zuijinguankan.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.785715" vertical-offset="463" max-vertical-offset="1273">
+              <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zaixianzhifutishi.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tv/zaixianzhifutishi.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7037037" vertical-offset="0" max-vertical-offset="950">
+              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -128,7 +122,7 @@
       <file leaf-file-name="baselayout.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tv/css/baselayout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="817">
+            <state vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="817">
               <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
               <folding />
             </state>
@@ -143,9 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/h5m/3.html" />
-        <option value="$PROJECT_DIR$/h5m/2.html" />
-        <option value="$PROJECT_DIR$/html5/game/num/15.html" />
         <option value="$PROJECT_DIR$/bigGame/css.css" />
         <option value="$PROJECT_DIR$/bigbigwork2d.js" />
         <option value="$PROJECT_DIR$/bigbigwork.js" />
@@ -194,6 +185,9 @@
         <option value="$PROJECT_DIR$/tv/dianyingpindao.html" />
         <option value="$PROJECT_DIR$/tv/quanqiuzhibo.html" />
         <option value="$PROJECT_DIR$/tv/tuijian.html" />
+        <option value="$PROJECT_DIR$/tv/yuyan.html" />
+        <option value="$PROJECT_DIR$/tv/zuijinguankan.html" />
+        <option value="$PROJECT_DIR$/tv/zaixianzhifutishi.html" />
       </list>
     </option>
   </component>
@@ -201,10 +195,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1000" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1298" />
+    <option name="height" value="994" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -322,28 +316,28 @@
       <recent name="C:\Users\js\Documents\bigbigwork.github.io\demos\team" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.tuijian.html">
-    <configuration default="false" name="gerenzhongxin.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/gerenzhongxin.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="baoyuezhifu.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/baoyuezhifu.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="dianyingpindao.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/dianyingpindao.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.zaixianzhifutishi.html">
     <configuration default="false" name="quanqiuzhibo.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/quanqiuzhibo.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
     <configuration default="false" name="tuijian.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/tuijian.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="yuyan.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/yuyan.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="zuijinguankan.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/zuijinguankan.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="zaixianzhifutishi.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bigbigwork.github.io/tv/zaixianzhifutishi.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
@@ -387,19 +381,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.gerenzhongxin.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.baoyuezhifu.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.dianyingpindao.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.quanqiuzhibo.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.tuijian.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.quanqiuzhibo.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.tuijian.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.yuyan.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.zuijinguankan.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.zaixianzhifutishi.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tuijian.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.quanqiuzhibo.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.dianyingpindao.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.baoyuezhifu.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.gerenzhongxin.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.zaixianzhifutishi.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.zuijinguankan.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.yuyan.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.tuijian.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.quanqiuzhibo.html" />
       </list>
     </recent_temporary>
   </component>
@@ -417,7 +411,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="0" />
+    <frame x="-9" y="-9" width="1298" height="994" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -425,7 +419,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23359375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2328125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -463,27 +457,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bigGame/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bigGame/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="475">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html5/oldgame/wumai.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5602923" vertical-offset="7919" max-vertical-offset="9139">
-          <caret line="441" column="13" selection-start-line="441" selection-start-column="13" selection-end-line="441" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bigGame/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="1102">
@@ -760,7 +733,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tv/tv.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.892858" vertical-offset="0" max-vertical-offset="684">
+        <state vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="684">
           <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding />
         </state>
@@ -768,7 +741,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tv/tiyanqu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.964285" vertical-offset="91" max-vertical-offset="1083">
+        <state vertical-scroll-proportion="0.0" vertical-offset="91" max-vertical-offset="1083">
           <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
           <folding />
         </state>
@@ -776,7 +749,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tv/buyed.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.214285" vertical-offset="2" max-vertical-offset="1349">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="1349">
           <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
           <folding />
         </state>
@@ -792,7 +765,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tv/gerenzhongxin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.642857" vertical-offset="0" max-vertical-offset="912">
+        <state vertical-scroll-proportion="0.0" vertical-offset="494" max-vertical-offset="912">
           <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
           <folding />
         </state>
@@ -800,7 +773,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tv/baoyuezhifu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.571428" vertical-offset="0" max-vertical-offset="760">
+        <state vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="760">
           <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
           <folding />
         </state>
@@ -808,7 +781,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tv/dianyingpindao.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.0" vertical-offset="0" max-vertical-offset="912">
+        <state vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="912">
           <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
           <folding />
         </state>
@@ -816,7 +789,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tv/quanqiuzhibo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="798">
+        <state vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="798">
           <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding />
         </state>
@@ -824,8 +797,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tv/tuijian.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41007194" vertical-offset="0" max-vertical-offset="834">
-          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        <state vertical-scroll-proportion="-10.857142" vertical-offset="247" max-vertical-offset="741">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tv/yuyan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.892858" vertical-offset="0" max-vertical-offset="589">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tv/zuijinguankan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.785715" vertical-offset="463" max-vertical-offset="1273">
+          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tv/zaixianzhifutishi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7037037" vertical-offset="0" max-vertical-offset="950">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
           <folding />
         </state>
       </provider>
